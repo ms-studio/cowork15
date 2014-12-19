@@ -1,0 +1,105 @@
+/* @override 
+	http://coworking-neuchatel.ch/wp-content/themes/cowork15/css/dev/50-mediaqueries.css */
+
+@media only screen 
+and (min-width : 400px) {
+	.album-pinterest p {
+		width: 50%;
+		float: left;
+	}
+}
+
+@media only screen 
+and (min-width : 820px) {
+	.album-pinterest p {
+		width: 30%;
+		float: left;
+	}
+	
+	.ul-presta li {
+		width: 50%;
+		float: left;
+	}
+	
+	.ul-presta li:nth-child(odd) {
+		clear: left;
+	}
+	
+	.ul-presta {
+		
+	}
+	
+	.red-circle .hero .page-title {
+		border-radius: 7em;
+		width: 7em;
+		height: 7em;
+		line-height: 7;
+	}
+	
+	.blog .hero .page-title {
+		border-radius: 5em;
+		width: 5em;
+		height: 5em;
+		line-height: 5;
+	}
+	
+	.page-id-12 .hero .page-title {
+		font-size: 2.25em;
+	}
+	
+}
+
+@media only screen 
+and (min-width : 920px) {
+	.album-pinterest p {
+		width: 50%;
+		float: left;
+	}
+	
+}
+
+@media only screen 
+and (min-width : 1000px) {
+
+	.ul-presta li {
+		width: 30%;
+		float: left;
+	}
+	.ul-presta li:nth-child(odd) {
+		clear: none;
+	}
+	.ul-presta li:nth-child(3n+1) {
+		clear: left;
+	}
+	
+	.red-circle .hero .page-title {
+		border-radius: 8em;
+		width: 8em;
+		height: 8em;
+		line-height: 8;
+	}
+	
+	.blog .hero .page-title {
+		border-radius: 5em;
+		width: 5em;
+		height: 5em;
+		line-height: 5;
+	}
+	
+}
+
+
+@media only screen 
+and (min-width: 1020px) {
+		.footer-navigation + .site-info {
+		width: 602px;
+		}
+}
+
+@media only screen 
+and (min-width : 1224px) {
+	.album-pinterest p {
+		width: 33%;
+		float: left;
+	}
+}

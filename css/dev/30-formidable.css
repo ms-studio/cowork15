@@ -1,0 +1,97 @@
+/* @override 
+	http://coworking-neuchatel.ch/wp-content/themes/cowork15/css/dev/30-formidable.css */
+
+/* @group Formidable */
+
+/* Overrides for Formidable */
+
+.with_frm_style p.description, .with_frm_style div.description, .with_frm_style div.frm_description, .with_frm_style .frm_error,
+.with_frm_style label.frm_primary_label, 
+.with_frm_style.frm_login_form label,
+.with_frm_style input[type=text], 
+.with_frm_style input[type=password], 
+.with_frm_style input[type=email], 
+.with_frm_style input[type=number], 
+.with_frm_style input[type=url], 
+.with_frm_style input[type=tel], 
+.with_frm_style select, 
+.with_frm_style textarea, 
+#content .with_frm_style input:not([type=submit]):not([type=button]),
+#content .with_frm_style select, 
+#content .with_frm_style textarea, 
+.with_frm_style .chosen-container,
+.with_frm_style input[type=file],
+.with_frm_style .frm_submit input[type=submit], .with_frm_style .frm_submit input[type=button], .frm_form_submit_style, .with_frm_style.frm_login_form input[type=submit],
+a.frm_save_draft,
+.with_frm_style #frm_field_cptch_number_container,
+.with_frm_style .frm_radio label, .with_frm_style .frm_checkbox label
+{
+ font-family: "camingodos-web", "Arial Bold", Helvetica, sans-serif !important;
+	font-size: 100%;
+ }
+ 
+ .with_frm_style .frm_submit input[type=submit]:hover, .with_frm_style .frm_submit input[type=button]:hover, .with_frm_style .frm_submit input[type=submit]:focus, .with_frm_style .frm_submit input[type=button]:focus, .with_frm_style.frm_login_form input[type=submit]:focus, .with_frm_style.frm_login_form input[type=submit]:hover {
+ 	background: #b13c3c;
+ 	border: 1px solid #b13c3c;
+ 	color: #fff;
+ 	}
+ 
+ 
+ .with_frm_style .frm_message {
+ 	font-size: 100% !important;
+ }
+ 
+ #form_inscript {
+ 	padding: 1.3em 1.3em;
+ 	border: 1px solid #ef8d8d;
+ }
+ 
+ .frm_form_fields label {
+ 	border-bottom: 0.5em solid #fff;
+/* 	line-height: 1.7;*/
+ }
+ 
+.frm_description {
+/* 	line-height: 1.7;*/
+ 	border-top: 0.5em solid #fff;
+ }
+ 
+.frmcal-calendar td:nth-of-type(6), 
+.frmcal-calendar td:nth-of-type(7) {
+	display: none;
+ }
+ 
+ .cal-time {
+ 	clear: left;
+ 	float: left;
+ 	padding-right: 0.3em;
+ 	display: block;
+ }
+ 
+ #frmcal-475 > p,
+ #frmcal-499 > p {
+/* 	float: left;*/
+ 	margin: 1.5em 0 1.5em 0;
+ 	display: block;
+/* 	clear: both;*/
+ }
+ 
+ .frmcal .more-link-plus {
+ 	display: block;
+	text-align: center;
+ }
+ 
+ #frmcal-475 .more-link-plus {
+ 	width: 8em; 
+ }
+ 
+ #frmcal-499 .more-link-plus {
+ 	width: 12em; 
+ }
+ 
+ .username {
+ 	font-weight: 700;
+ }
+ 
+
+/* @end */
