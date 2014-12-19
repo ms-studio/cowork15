@@ -234,7 +234,6 @@ add_action( 'wp_enqueue_scripts', 'cowork_scripts', 11 );
  
  
  
- 
 function cowork_admin_fonts() {
 
 	wp_dequeue_style( 'edin-pt-sans' );
@@ -250,6 +249,7 @@ function cowork_admin_fonts() {
 //
 //	wp_enqueue_style( 'cowork-droid-sans-mono', cowork_droid_sans_mono_font_url(), array(), null );
 }
+
 add_action( 'admin_print_scripts-appearance_page_custom-header', 'cowork_admin_fonts', 11 );
 
 /**
@@ -283,7 +283,7 @@ require_once('functions/init.php');
 require_once('functions/formidable.php');
 
  
-
+ 
 
 
 /* admin interface

@@ -156,3 +156,25 @@ function my_child_theme_setup() {
  add_action( 'admin_menu', 'ap_remove_jetpack_page', 999 );
  
  
+/*
+ * gallery shortcode improvement
+ * makes it link to the "large" file (not full size) 
+ 
+ * http://oikos.org.uk/2011/09/tech-notes-using-resized-images-in-wordpress-galleries-and-lightboxes/
+*/
+
+function bcf_get_attachment_link_filter( $content, $post_id, $size, $permalink ) {
+ 
+    // Only do this if we're getting the file URL
+    if (! $permalink) {
+        // This returns an array of (url, width, height)
+        $image = wp_get_attachment_image_src( $post_id, 'large' );
+        $new_content = preg_replace('/href=\'(.*?)\'/', 'href=\'' . $image[0] . '\'', $content );
+        return $new_content;
+    } else {
+        return $content;
+    }
+}
+ 
+add_filter('wp_get_attachment_link', 'bcf_get_attachment_link_filter', 10, 4);
+
