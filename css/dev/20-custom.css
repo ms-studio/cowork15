@@ -20,6 +20,10 @@ textarea
 	font-weight: 300;
 }
 
+.hidden {
+	display: none;
+}
+
 body div.jp-carousel-titleanddesc-title 
 {
 	font-family: 'chaparral-pro', Georgia, 'Times New Roman', 'TimesNewRoman', serif !important;
@@ -307,6 +311,47 @@ table.ical td.day7 {
 	font-size: 120%;
 	line-height: 1.3;
 }
+
+/* @group Formidable */
+
+.frmcal-content .username {
+	line-height: 1.2;
+	margin: 0.6em 0;
+	position: relative;
+	clear: left;
+}
+
+.event-info {
+	color: #999;
+	padding: 0 0.2em;
+	vertical-align: middle;
+	
+}
+
+
+.username:hover .event-info,
+.event-info:hover {
+	color: #e74f4e;
+	cursor: pointer;
+}
+
+/*.username .details,*/
+.username:hover .details {
+	display: block;
+	position: absolute;
+	border: 1px solid #e74f4e;
+	background: #fff;
+	color: #e74f4e;
+	z-index: 10;
+	top: -1em;
+	left: 70%;
+	width: 100%;
+	padding: 0.5em;
+	-moz-box-shadow: 3px 3px 10px #d3d3d3;
+	box-shadow: 3px 3px 10px #d3d3d3;
+}
+
+/* @end */
 
 /* @group Jetpack Carousel */
 

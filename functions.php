@@ -6,7 +6,7 @@
  *
  */
 
-// Change-Detector-XXXXXXXXXXX - for Espresso.app
+// Change-Detector-XXXXXXXXXXXXX - for Espresso.app
 
 /**
  * Set the content width based on the theme's design and stylesheet.
@@ -179,6 +179,7 @@ function cowork_scripts() {
 	wp_dequeue_style( 'edin-pt-mono' );
 
 	wp_dequeue_style( 'edin-edincon' );
+	
 
 	wp_dequeue_script( 'edin-navigation' );
 
@@ -206,7 +207,7 @@ add_action( 'wp_enqueue_scripts', 'cowork_scripts', 11 );
  function custom_register_styles() {
  
  // wp_dequeue_style( 'edin-style' );
- 
+ // Do not dequeue, or we lose some functionality!
  
  if ( WP_DEBUG == true ) {
  
@@ -223,7 +224,7 @@ add_action( 'wp_enqueue_scripts', 'cowork_scripts', 11 );
  		// PROD: the MAIN stylesheet - combined and minified
  		wp_enqueue_style( 
  				'cowork-style', 
- 				get_stylesheet_directory_uri() . '/css/build/styles.20141201155336.css', // main.css
+ 				get_stylesheet_directory_uri() . '/css/build/styles.20150122134743.css', // main.css
  				false, // dependencies
  				null // version
  		); 

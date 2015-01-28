@@ -1,15 +1,17 @@
 @font-face {
 	font-family: 'cowork';
-	src:url('../../fonts/cowork.eot?z3d0a5');
-	src:url('../../fonts/cowork.eot?#iefixz3d0a5') format('embedded-opentype'),
-		url('../../fonts/cowork.woff?z3d0a5') format('woff'),
-		url('../../fonts/cowork.ttf?z3d0a5') format('truetype'),
-		url('../../fonts/cowork.svg?z3d0a5#cowork') format('svg');
+	src:url('../../fonts/icomoon-v2/cowork.eot?z3d0a5');
+	src:url('../../fonts/icomoon-v2/cowork.eot?#iefixz3d0a5') format('embedded-opentype'),
+		url('../../fonts/icomoon-v2/cowork.woff?z3d0a5') format('woff'),
+		url('../../fonts/icomoon-v2/cowork.ttf?z3d0a5') format('truetype'),
+		url('../../fonts/icomoon-v2/cowork.svg?z3d0a5#cowork') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+.icomoon,
+[class^="icon-"],
+[class*=" icon-"] {
 	font-family: 'cowork';
 	speak: none;
 	font-style: normal;
