@@ -14,7 +14,7 @@ module.exports = function(grunt) {
         cssmin: {
           combine: {
           	options: {
-          	      banner: '/*! styles for <%= pkg.name %> - generated <%= grunt.template.today("yyyy-mm-dd") %> */\n'
+          	      banner: '/*! styles for <%= pkg.name %> - by ms-studio.net - generated <%= grunt.template.today("yyyy-mm-dd") %> */\n'
           	    },
             files: {
               'css/build/styles.<%= timestamp %>.css': ['css/dev/01-init.css']

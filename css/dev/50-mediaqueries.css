@@ -86,13 +86,49 @@ and (min-width : 1000px) {
 		line-height: 5;
 	}
 	
+	.powered-by li.logo-think2make {
+		margin-top: 0;
+	}
+	
+	#menu-powered-by {
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox; 
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-direction: row;
+		flex-direction: row;
+	}
+	
+	.powered-by li.logo-infoclic,
+	.powered-by li.logo-think2make,
+	.powered-by li.logo-ms-studio {
+		margin: 0;
+		-webkit-flex: 1 auto;
+		flex: 1 auto;
+		width: 30%;
+	}
+	
+	.powered-by li.logo-infoclic a,
+	.powered-by li.logo-think2make a,
+	.powered-by li.logo-ms-studio a {
+/*		margin-left: 2%;
+		margin-right: 2%;*/
+/*		float: left;*/
+/*		position: relative;
+		vertical-align: top;*/
+	}
+	
 }
 
 
 @media only screen 
 and (min-width: 1020px) {
-		.footer-navigation + .site-info {
-		width: 602px;
+		.footer-navigation {
+			width: 402px;
+		}
+		.site-info {
+		width: 402px;
 		}
 }
 

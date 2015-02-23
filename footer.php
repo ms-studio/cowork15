@@ -11,9 +11,20 @@
 	</div><!-- #content -->
 
 	<?php get_sidebar( 'footer' ); ?>
+	
+	<?php if ( is_active_sidebar( 'powered_sidebar' ) ): ?>
+		<div id="powered-by" class="powered-by">
+			<?php dynamic_sidebar( 'powered_sidebar' ) ?>
+		</div>
+	<?php endif; ?>
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<?php if ( has_nav_menu( 'footer' ) ) : ?>
+		<?php
+		
+		// #colophon = la partie avec fond sombre
+		
+		
+		 if ( has_nav_menu( 'footer' ) ) : ?>
 			<nav class="footer-navigation" role="navigation">
 				<?php
 					wp_nav_menu( array(
@@ -25,9 +36,7 @@
 			</nav><!-- .footer-navigation -->
 		<?php endif; ?>
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'cowork' ) ); ?>"><?php printf( __( 'Powered by %s', 'cowork' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'cowork' ), 'Cowork15', '<a href="http://ms-studio.net/webdesign/coworking-neuchatel/" rel="designer">ms-studio</a>' ); ?>
+			<!-- Website by <a href="http://ms-studio.net/webdesign/coworking-neuchatel/" rel="designer">ms-studio</a> -->
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

@@ -16,6 +16,24 @@ function my_child_theme_setup() {
     load_theme_textdomain( 'edin', get_stylesheet_directory() . '/languages' );
    
 }
+
+add_action( 'widgets_init', 'cowork_register_sidebar' );
+if ( ! function_exists( 'cowork_register_sidebar' ) ) :
+	/**
+	 * Register the sidebars
+	 */
+	function cowork_register_sidebar() {
+		register_sidebar( array(
+			'name'=> __( 'Powered By', 'cowork' ),
+			'id' => 'powered_sidebar',
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget' => '</aside>',
+			'before_title' => '<h3 class="widgettitle">',
+			'after_title' => '</h3>'
+		) );		
+	}
+
+endif; // cowork_register_sidebar
  
  
  /* Allowed FileTypes

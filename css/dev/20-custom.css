@@ -24,6 +24,10 @@ textarea
 	display: none;
 }
 
+.admin-bar .admin-visible {
+	display: block;
+}
+
 body div.jp-carousel-titleanddesc-title 
 {
 	font-family: 'chaparral-pro', Georgia, 'Times New Roman', 'TimesNewRoman', serif !important;
@@ -289,6 +293,74 @@ table.ical td.day7 {
 	margin-top: 0.5em;
 	margin-bottom: 0.8em;
 }
+
+/* @end */
+
+/* @group Powered By */
+
+.powered-by {
+	background: #e74f4e;
+	padding: 0;
+	margin: 0px;
+	text-align: center;
+}
+
+.powered-by .widgettitle {
+	text-transform: inherit;
+	color: #fff;
+}
+
+.powered-by .widget_nav_menu li {
+	border-top: 0px;
+	border-bottom: 0px;
+}
+
+.powered-by .widget_nav_menu a {
+	color: #fff;
+	
+}
+
+.powered-by li.logo-infoclic a {
+		background: url(../../img/icons/logo-infoclic.png);
+		width: 303px;
+		height: 93px;
+}
+
+.powered-by li.logo-think2make {
+	margin-top: 0.5em;
+}
+
+.powered-by li.logo-ms-studio {
+	padding-bottom: 1em;
+}
+
+.powered-by li.logo-think2make a {
+		background: url(../../img/icons/logo-think2make.png);
+		width: 292px;
+		height: 56px;
+}
+
+.powered-by li.logo-ms-studio a {
+		background: url(../../img/icons/logo-ms-studio.png);
+		width: 230px;
+		height: 73px;
+}
+
+.powered-by li.logo-infoclic a,
+.powered-by li.logo-think2make a,
+.powered-by li.logo-ms-studio a {
+	font: 0/0 a;
+	text-shadow: none;
+	color: transparent;
+	
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
 
 /* @end */
 
