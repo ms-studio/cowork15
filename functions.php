@@ -6,7 +6,7 @@
  *
  */
 
-// Change-Detector-XXXXXXXXXXXXXX - for Espresso.app
+// Change-Detector-XXXXXXXXXXXXXXX - for Espresso.app
 
 /**
  * Set the content width based on the theme's design and stylesheet.
@@ -224,7 +224,7 @@ add_action( 'wp_enqueue_scripts', 'cowork_scripts', 11 );
  		// PROD: the MAIN stylesheet - combined and minified
  		wp_enqueue_style( 
  				'cowork-style', 
- 				get_stylesheet_directory_uri() . '/css/build/styles.20150216223118.css', // main.css
+ 				get_stylesheet_directory_uri() . '/css/build/styles.20150423104023.css', // main.css
  				false, // dependencies
  				null // version
  		); 

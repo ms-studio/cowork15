@@ -143,7 +143,12 @@ endif; // cowork_register_sidebar
 //  		'omnisearch',
 //  		'photon',
 //  		'post-by-email',
+  		'protect',
+  		
   		'publicize',
+  		
+  		'related-posts',
+  		
   		'sharedaddy',
 //  		'shortcodes',
 //  		'shortlinks',
