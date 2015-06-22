@@ -195,7 +195,8 @@ body.home .hero .entry-content {
 /* @group Official Button Style */
 
 .more-link-plus,
-.front-item .more-link {
+.front-item .more-link,
+.biblio-tag-cloud .cat-item a {
 	padding: 12px 24px;
 	background: #e74f4e;
 	-moz-border-radius: 4px;
@@ -210,7 +211,10 @@ body.home .hero .entry-content {
 .more-link-plus:active,
 .front-item .more-link:hover,
 .front-item .more-link:focus,
-.front-item .more-link:active {
+.front-item .more-link:active,
+.biblio-tag-cloud .cat-item a:hover,
+.biblio-tag-cloud .cat-item a:focus,
+.biblio-tag-cloud .cat-item a:active {
 	background: #242424;
 	color: #fff;
 }
@@ -271,6 +275,50 @@ body.home .hero .entry-content {
 .ul-presta li#acces:before { 
 	content: "\e606";
 }
+
+/* @end */
+
+/* @group Book Pages */
+
+.book-page .entry-meta  {
+	border-bottom: 0;
+	margin-bottom: 0;
+	margin-top: 1em;
+}
+
+.book-page .entry-footer {
+	border-top: 2px solid #d1cecd;
+	margin-top: 0.5em;
+	padding-top: 1em;
+}
+
+.page-template-page-biblio .site-main .hentry {
+	margin-bottom: 0.2em;
+}
+
+.page-template-page-biblio .grid-area h2 {
+	font-size: 1.4em;
+}
+
+.page-template-page-biblio .grid-wrapper {
+	padding-top: 0.5em;
+}
+
+.biblio-tags {
+	background: #fff;
+}
+
+.biblio-tags .content-area {
+	padding-top: 0;
+	padding-bottom: 2em;
+}
+
+.biblio-tag-cloud .cat-item {
+	list-style: none;
+	float: left;
+	line-height: 3;
+}
+
 
 /* @end */
 
@@ -401,6 +449,9 @@ table.ical td.day7 {
 }
 
 
+.type-page .edit-link {
+	display: none;
+}
 
 
 /* @end */

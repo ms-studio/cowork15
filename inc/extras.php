@@ -14,6 +14,7 @@
  * @return array
  */
 function cowork_body_classes( $classes ) {
+
 	// Adds a class of hero-image to pages with featured image.
 	if ( ( is_page() && has_post_thumbnail() ) || ( '' != get_header_image() && ( ( is_page() && ! has_post_thumbnail() ) || is_404() || is_search() || is_archive() ) ) || ( is_home() ) ) {
 		$classes[] = 'hero-image';
@@ -27,9 +28,13 @@ function cowork_body_classes( $classes ) {
 	// Add a class for the Red Circle
 	
 	if ( is_home() || is_page( 12 ) ) {
-		
 		// 12 = Coworking
 		$classes[] = 'red-circle';
+	}
+	
+	// Adds a class of no-sidebar-full, no-sidebar or sidebar-(right|left) to blogs.
+	if ( is_page_template( 'page-templates/page-biblio.php' ) ) {
+		$classes[] = 'no-sidebar-full';
 	}
 
 	return $classes;
