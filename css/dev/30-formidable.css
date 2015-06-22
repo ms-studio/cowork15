@@ -30,11 +30,38 @@ a.frm_save_draft,
 	font-size: 100%;
  }
  
- .with_frm_style .frm_submit input[type=submit]:hover, .with_frm_style .frm_submit input[type=button]:hover, .with_frm_style .frm_submit input[type=submit]:focus, .with_frm_style .frm_submit input[type=button]:focus, .with_frm_style.frm_login_form input[type=submit]:focus, .with_frm_style.frm_login_form input[type=submit]:hover {
- 	background: #b13c3c;
- 	border: 1px solid #b13c3c;
- 	color: #fff;
+ .frm_style_formidable-style.with_frm_style input[type=submit],
+ .frm_style_formidable-style.with_frm_style .frm_submit input[type=button],
+ .frm_form_submit_style,
+ .frm_style_formidable-style.with_frm_style.frm_login_form input[type=submit],
+ .with_frm_style .frm_submit input[type=submit]:hover,
+ .with_frm_style .frm_submit input[type=button]:hover,
+ .with_frm_style .frm_submit input[type=submit]:focus,
+ .with_frm_style .frm_submit input[type=button]:focus,
+ .with_frm_style.frm_login_form input[type=submit]:focus,
+ .with_frm_style.frm_login_form input[type=submit]:hover 
+ {
+ 		background: #b13c3c;
+ 		border: 1px solid #b13c3c;
+ 		color: #fff;
+ 		
+ 		padding: 13px 26px;
+ 		background: #e74f4e;
+ 		border: 0;
+ 		color: #fff;
+ 		font-weight: bold;
+ 		/*	text-transform: uppercase;*/
+ 		cursor: pointer;
+ 		-webkit-appearance: button;
  	}
+ 	
+.frm_style_formidable-style.with_frm_style input[type=submit]:hover,
+.frm_style_formidable-style.with_frm_style .frm_submit input[type=button]:hover,
+.frm_style_formidable-style.with_frm_style.frm_login_form input[type=submit]:hover {
+	outline: none;
+	background: #242424;
+	color: #fff;
+}	
  
  
  .with_frm_style .frm_message {
