@@ -283,6 +283,10 @@ body.home .hero .entry-content {
 .book-page .entry-meta  {
 	border-bottom: 0;
 	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.book-page .post-thumbnail {
 	margin-top: 1em;
 }
 
