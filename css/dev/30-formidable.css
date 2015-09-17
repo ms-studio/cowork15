@@ -30,6 +30,18 @@ a.frm_save_draft,
 	font-size: 100%;
  }
  
+ .frm_style_formidable-style.with_frm_style label.frm_primary_label, 
+ .frm_style_formidable-style.with_frm_style.frm_login_form label,
+ .frm_style_formidable-style.with_frm_style .frm_radio label, 
+ .frm_style_formidable-style.with_frm_style .frm_checkbox label,
+ .frm_style_formidable-style.with_frm_style p.description, 
+ .frm_style_formidable-style.with_frm_style div.description, 
+ .frm_style_formidable-style.with_frm_style div.frm_description, 
+ .frm_style_formidable-style.with_frm_style .frm-show-form > div.frm_description, 
+ .frm_style_formidable-style.with_frm_style .frm_error {
+ 	font-size: 80%;
+ }
+ 
  .frm_style_formidable-style.with_frm_style input[type=submit],
  .frm_style_formidable-style.with_frm_style .frm_submit input[type=button],
  .frm_form_submit_style,

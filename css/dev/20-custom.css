@@ -176,7 +176,8 @@ h1.site-title a {
 
 /* @group Front Page */
 
-body.home .hero .entry-content {
+body.home .hero .entry-content,
+.page-template-front-page-cdf .hero .entry-content {
 	background-color: rgba(0,0,0,0.6);
 	padding: 20px 20px 0px 20px;
 	border-radius: 10px;
@@ -190,6 +191,20 @@ body.home .hero .entry-content {
 
 .front-item .title-style {
 	text-align: center;
+}
+
+.iframe-container .h2,
+.iframe-container .h3 {
+	font-size: 100%;
+	padding: 0.8em 2em 0em 2em;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.iframe-container .h3 {
+	padding: 0em 2em 0.8em 2em;
+	font-size: 80%;
+	font-weight: normal;
 }
 
 /* @group Official Button Style */
@@ -224,7 +239,7 @@ body.home .hero .entry-content {
 .ul-presta li {
 	border: 0px solid #333;
 	margin-bottom: 1em;
-	padding: 0.5em;
+	padding: 0.5em 1em;
 /*	background: #eee;*/
 	border-radius: 10px;
 	list-style: none;

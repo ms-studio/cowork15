@@ -7,8 +7,19 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class("book-page"); ?>>
 
 	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php 
 		
+		if ( is_single() ) {
+		
+			the_title( '<h1 class="entry-title">', '</h1>' ); 
+		
+		} else {
+		 
+		the_title( sprintf( '<header class="entry-header"><h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1></header>' ); 
+		
+		} 
+		
+		?>
 			<?php edin_post_thumbnail(); ?>
 
 		<div class="entry-meta">
@@ -50,12 +61,24 @@
 
 		?>
 	</div><!-- .entry-content -->
-
+	
+	<?php 
+	
+	//  we show the footer only if we are on a single page, not in archive pages or search results.
+	
+	if ( is_single() ) {
+	
+	 ?>
 	<footer class="entry-footer">
 		<?php 
-		edin_posted_on();
+		// edin_posted_on();
 		//edin_entry_meta();
 		?>
-		<p>Cet ouvrage appartient à la <a href="http://coworking-neuchatel.ch/bibliotheque/">Bibliothèque Collective</a> du Coworking Neuchâtel</p>
+		Cet ouvrage appartient à la <a href="http://coworking-neuchatel.ch/bibliotheque/">Bibliothèque Collective</a> du Coworking Neuchâtel</p>
 	</footer><!-- .entry-footer -->
+	<?php  
+	
+	} // end if
+	
+	?>
 </article><!-- #post-## -->

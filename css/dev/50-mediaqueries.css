@@ -62,7 +62,7 @@ and (min-width : 920px) {
 and (min-width : 1000px) {
 
 	.ul-presta li {
-		width: 30%;
+		width: 32%;
 		float: left;
 	}
 	.ul-presta li:nth-child(odd) {
@@ -121,6 +121,7 @@ and (min-width : 1000px) {
 	
 }
 
+/* Breakpoint pour ecran large */
 
 @media only screen 
 and (min-width: 1020px) {
@@ -129,6 +130,54 @@ and (min-width: 1020px) {
 		}
 		.site-info {
 		width: 402px;
+		}
+		
+		.hero .post-358 {
+			width: 30%;
+			margin-left: 10%;
+		}
+		
+		body.hero-image .hero.with-featured-image, 
+		body[class*="front-page"] .hero {
+		    padding-bottom: 94px;
+		    padding-top: 204px !important;
+		}
+		
+		.iframe-container {
+			position: absolute;
+/*			border: 20px solid rgba(0,0,0,0.6);*/
+			background-color: rgba(0,0,0,0.6);
+			border-radius: 10px;
+			top: 204px;
+			right: 5%;
+			height: 20em;
+			width: 50%;
+/*			padding-right: 10%;*/
+			z-index: 10;
+			padding: 20px;
+		}
+		
+		.iframe-container-title {
+			color: #fff;
+			position: absolute;
+			z-index: 20;
+			left: 35px;
+			bottom: 15px;
+			
+		}
+		.iframe-container-title .h2,
+		.iframe-container-title .h3 {
+			text-align: left;
+			padding-left: 0;
+		}
+		
+		iframe.front-google-tour {
+			position: relative;
+			width: 100% !important;
+			height: 100% !important;
+			left: 0px;
+			display: block;
+			border: 10px solid #333;
 		}
 }
 
