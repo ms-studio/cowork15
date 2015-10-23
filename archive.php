@@ -108,7 +108,7 @@ get_header();
 						if ( is_tax('cwn_thematique') ) {
 							?>
 							<footer class="entry-footer">
-							Venez trouver ces ouvrages dans la <a href="http://coworking-neuchatel.ch/bibliotheque/">Bibliothèque Collective</a> du Coworking Neuchâtel.</p>
+							Venez trouver ces ouvrages dans la <a href="//coworking-neuchatel.ch/bibliotheque/">Bibliothèque Collective</a> du Coworking Neuchâtel.</p>
 							</footer>
 							<?php
 						}
@@ -141,7 +141,7 @@ get_header();
 					if ( is_tax('cwn_thematique') ) {
 						?>
 						<footer class="entry-footer">
-						Venez trouver ces ouvrages dans la <a href="http://coworking-neuchatel.ch/bibliotheque/">Bibliothèque Collective</a> du Coworking Neuchâtel.</p>
+						Venez trouver ces ouvrages dans la <a href="//coworking-neuchatel.ch/bibliotheque/">Bibliothèque Collective</a> du Coworking Neuchâtel.</p>
 						</footer>
 						<?php
 					}

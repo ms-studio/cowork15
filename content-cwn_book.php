@@ -74,7 +74,7 @@
 		// edin_posted_on();
 		//edin_entry_meta();
 		?>
-		Cet ouvrage appartient à la <a href="http://coworking-neuchatel.ch/bibliotheque/">Bibliothèque Collective</a> du Coworking Neuchâtel</p>
+		Cet ouvrage appartient à la <a href="//coworking-neuchatel.ch/bibliotheque/">Bibliothèque Collective</a> du Coworking Neuchâtel</p>
 	</footer><!-- .entry-footer -->
 	<?php  
 	
