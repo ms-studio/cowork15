@@ -4,11 +4,20 @@
  * Text Domain
  */
  
-add_action( 'after_setup_theme', 'my_child_theme_setup' );
+
 function my_child_theme_setup() {
     load_theme_textdomain( 'edin', get_stylesheet_directory() . '/languages' );
+    
+    register_nav_menus( array(
+    	'membres_neuch'   => __( 'Membres Neuchâtel', 'cowork' ),
+    	'membres_tchaux' => __( 'Membres CdF', 'cowork' ),
+    	'membres_global'   => __( 'Membres Global', 'cowork' ),
+    ) );
    
 }
+add_action( 'after_setup_theme', 'my_child_theme_setup' );
+
+
 
 add_action( 'widgets_init', 'cowork_register_sidebar' );
 if ( ! function_exists( 'cowork_register_sidebar' ) ) :
@@ -27,9 +36,6 @@ if ( ! function_exists( 'cowork_register_sidebar' ) ) :
 	}
 
 endif; // cowork_register_sidebar
- 
- 
-
  
  
  /* we wanted to allow any logged-in user to view our private posts and pages

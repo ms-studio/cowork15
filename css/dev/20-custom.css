@@ -475,6 +475,39 @@ table.ical td.day7 {
 
 /* @end */
 
+/* @group Connected Members */
+
+.header-member-menu {
+	width: 100%;
+	padding: 0.5em 1em;
+	background: #f1f0f0;;
+}
+
+.member-navigation ul {
+	margin-bottom: 0px;
+}
+
+.member-navigation li {
+	display: inline;
+	text-shadow: none;
+	text-transform: uppercase;
+}
+
+.member-navigation li::after {
+	content: " | ";
+	color: #e74f4e;
+}
+    
+.member-navigation a {
+	font-family: "camingodos-web", "Arial Bold", Helvetica, sans-serif;
+}
+
+body.logged-in #menu-item-931 {
+	display: none;
+}
+
+/* @end */
+
 /* Wysija Tables */
 #wysija-subscriptions table,
 #wysija-subscriptions th,

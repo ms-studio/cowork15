@@ -12,7 +12,6 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title><?php wp_title( '|', true, 'right' ); ?></title>
-<link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <?php wp_head(); ?>
 <script src="//use.typekit.net/gha6bfi.js"></script>
@@ -24,6 +23,93 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'cowork' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
+	
+		<?php 
+		
+		// Pour coworkers connectés, montrer le menu 
+		
+		// tester si on est connecté:
+		
+		if ( is_user_logged_in() ) {
+			?>
+			
+			<div class="header-member-menu">
+			<?php 
+			
+			$user_ID = get_current_user_id();
+			
+			// echo 'Welcome, registered user nr '.$user_ID.'! ';
+			
+			$cwrk_sites = get_field('cowork_site', 'user_'.$user_ID);
+			
+			// note: if one site = string
+			// if two elements = array
+			
+			function cowork_generate_menu($menu_name) {
+				
+				if ( has_nav_menu( $menu_name ) ) : ?>
+					<nav class="member-navigation" role="navigation">
+						<?php
+							wp_nav_menu( array(
+								'theme_location'  => $menu_name,
+								'menu_class'      => 'clear',
+								'depth'           => 1,
+							) );
+						?>
+					</nav><!-- .footer-navigation -->
+				<?php endif;
+			
+			}
+			
+			if ( is_array($cwrk_sites) ) {
+			
+				
+				// if array has 2 items -> global_menu
+				
+				if ( count($cwrk_sites) == 2 ) {
+					cowork_generate_menu('membres_global');
+				} else {
+				
+					// go through array $cwrk_sites
+					
+					foreach ($cwrk_sites as $key => $site) {
+						if ( $site == 'Neuchâtel') {
+							cowork_generate_menu('membres_neuch');
+						}
+						if ( $site == 'La Chaux-de-Fonds') {
+							cowork_generate_menu('membres_tchaux');
+						} 
+					} // end foreach
+				
+				} // end count test
+				
+				
+			} else if ( is_string($cwrk_sites) ) {
+				
+				// test if Neuchatel or Chaux de Fonds
+				
+				if ($cwrk_sites == 'Neuchâtel') {
+					cowork_generate_menu('membres_neuch');
+				} else if ($cwrk_sites == 'La Chaux-de-Fonds') {
+					cowork_generate_menu('membres_tchaux');
+				}
+				
+			} // end testing array vs string
+			
+			 ?>
+			</div>
+			
+			<?php 
+			
+		} 
+		
+//		$variable = get_field('field_name', 'user_1');
+//		
+//		// do something with $variable
+		
+		
+		 ?>
+	
 		<?php
 			$top_area_content = get_theme_mod( 'cowork_top_area_content' );
 			if ( '' != $top_area_content ) :

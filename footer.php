@@ -10,13 +10,17 @@
 
 	</div><!-- #content -->
 
-	<?php get_sidebar( 'footer' ); ?>
+	<?php // get_sidebar( 'footer' ); ?>
 	
-	<?php if ( is_active_sidebar( 'powered_sidebar' ) ): ?>
-		<div id="powered-by" class="powered-by">
-			<?php dynamic_sidebar( 'powered_sidebar' ) ?>
-		</div>
-	<?php endif; ?>
+	<?php 
+	
+	// Partie avec les sponsors : désactivé
+	 // if ( is_active_sidebar( 'powered_sidebar' ) ):
+	 // <div id="powered-by" class="powered-by">
+	 // dynamic_sidebar( 'powered_sidebar' )
+	 // </div>
+	
+	 ?>
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<?php

@@ -134,3 +134,17 @@ a.frm_save_draft,
  
 
 /* @end */
+
+/* @group Calendar */
+
+.frmcal-calendar .frmcal-today {
+	background: #FFFDC6;
+}
+
+table.frmcal-calendar .frmcal_date,
+table.frmcal-calendar .frmcal-today .frmcal_date,
+table.frmcal-calendar .frmcal-today .frmcal_date {
+	background-color: transparent !important;
+}
+
+/* @end */
