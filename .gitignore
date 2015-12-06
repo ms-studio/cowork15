@@ -48,3 +48,5 @@ publish
 img-src
 node_modules
 css/build/
+themes/edin/
+themes/goran*
