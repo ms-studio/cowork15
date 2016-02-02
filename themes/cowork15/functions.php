@@ -294,7 +294,13 @@ require_once('functions/init.php');
 require_once('functions/formidable.php');
 
  
+ /* WooCommerce Support
+ ******************************/
  
+ add_action( 'after_setup_theme', 'woocommerce_support' );
+ function woocommerce_support() {
+     add_theme_support( 'woocommerce' );
+ }
 
 
 /* admin interface
