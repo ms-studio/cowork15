@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WooCommerce Membership\n"
 "POT-Creation-Date: 2016-03-08 11:07+0100\n"
-"PO-Revision-Date: 2016-03-08 11:07+0100\n"
+"PO-Revision-Date: 2016-03-08 11:44+0100\n"
 "Language-Team: RightPress <info@rightpress.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -872,43 +872,43 @@ msgstr ""
 
 #: ../woocommerce-membership.php:794
 msgid "Membership product"
-msgstr ""
+msgstr "Produit abonnement"
 
 #: ../woocommerce-membership.php:795
 msgid "Select Plans"
-msgstr ""
+msgstr "Choisir les abonnements"
 
 #: ../woocommerce-membership.php:796
 msgid "Select Plan"
-msgstr ""
+msgstr "Choisir un abonnement"
 
 #: ../woocommerce-membership.php:797
 msgid "Select User"
-msgstr ""
+msgstr "Choisir un utilisateur"
 
 #: ../woocommerce-membership.php:1173
 msgid "day"
 msgid_plural "days"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "jour"
+msgstr[1] "jours"
 
 #: ../woocommerce-membership.php:1176
 msgid "week"
 msgid_plural "weeks"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "semaine"
+msgstr[1] "semaines"
 
 #: ../woocommerce-membership.php:1179
 msgid "month"
 msgid_plural "months"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "mois"
+msgstr[1] "mois"
 
 #: ../woocommerce-membership.php:1182
 msgid "year"
 msgid_plural "years"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "année"
+msgstr[1] "années"
 
 #: ../woocommerce-membership.php:1379
 #, php-format

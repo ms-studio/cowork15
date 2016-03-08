@@ -18,6 +18,9 @@ include_once (plugin_dir_path(__FILE__).'cwn-post-types.php');
 // Jetpack
 include_once (plugin_dir_path(__FILE__).'cwn-jetpack.php');
 
+// Traductions
+include_once (plugin_dir_path(__FILE__).'cwn-traductions.php');
+
 // Daily Email
 include_once (plugin_dir_path(__FILE__).'cwn-dailymail.php');
 
