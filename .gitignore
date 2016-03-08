@@ -50,3 +50,4 @@ node_modules
 css/build/
 themes/edin/
 themes/goran*
+plugins/plugins-woocommerce-*
