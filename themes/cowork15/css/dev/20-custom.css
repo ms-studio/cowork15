@@ -102,6 +102,10 @@ h1.site-title a {
 	line-height: 1.5;
 }
 
+.alignleft {
+    margin-bottom: 20px;
+}
+
 .form-allowed-tags {
 	display: none;
 }
