@@ -11,12 +11,22 @@ add_action( 'plugins_loaded', 'cowork_load_textdomain', 1 ); // must be earlier 
 
 function cowork_load_textdomain() {
 			
+			// 
+			
+			// woocommerce
+			
+			load_plugin_textdomain( 
+				'woocommerce',
+				false, 
+				'cwn-functions/languages/' //
+			);
+			
 			// subscriptio
 			
 			load_plugin_textdomain( 
 				'subscriptio',
 				false, 
-				'cwn-functions/languages/' // relative to WP_PLUGIN_DIR
+				'cwn-functions/languages/'
 			);
 			
 			// woocommerce-membership
@@ -35,8 +45,20 @@ function cowork_load_textdomain() {
 				'cwn-functions/languages/'
 			);
 			
-
 }
+
+// filtering for Active => Actif
+
+function cwn_subscriptio_formatted_status($title){
+    
+    if ($title == 'Active') {
+    	$title = 'Actif';
+    }
+    return $title;
+}
+add_filter('subscriptio_formatted_status','cwn_subscriptio_formatted_status');
+
+
 
 
 /*

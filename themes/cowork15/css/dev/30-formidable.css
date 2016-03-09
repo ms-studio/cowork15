@@ -53,9 +53,7 @@ a.frm_save_draft,
  .with_frm_style.frm_login_form input[type=submit]:focus,
  .with_frm_style.frm_login_form input[type=submit]:hover 
  {
- 		background: #b13c3c;
  		border: 1px solid #b13c3c;
- 		color: #fff;
  		
  		padding: 13px 26px;
  		background: #e74f4e;

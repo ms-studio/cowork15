@@ -11,7 +11,7 @@
 .woocommerce .site-content button.button.alt:hover, 
 .woocommerce .site-content input.button.alt:hover 
 {
-	padding: 13px 26px;
+	padding: .2em .7em;
 		background: #e74f4e;
 		border: 0;
 		color: #fff;
@@ -21,4 +21,11 @@
 		-webkit-appearance: button;
 		
 	font-family: "camingodos-web", "Arial Bold", Helvetica, sans-serif;
+}
+
+.woocommerce .site-content #respond input#submit.alt:hover, 
+.woocommerce .site-content a.button.alt:hover, 
+.woocommerce .site-content button.button.alt:hover, 
+.woocommerce .site-content input.button.alt:hover {
+	background: #242424;
 }

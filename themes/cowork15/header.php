@@ -26,90 +26,68 @@
 	
 		<?php 
 		
-		// Pour coworkers connectés, montrer le menu 
-		
-		// tester si on est connecté:
+		/* 
+		 * Pour coworkers connectés, montrer le menu
+		 * Tester si on est connecté:
+		 * NOTE: avec WooCommerce, il y a un nouveau type d'utilisateur, "customer"
+		*/
 		
 		if ( is_user_logged_in() ) {
 		
 			if ( function_exists( 'get_field' ) ) {
+			
+				$user_ID = get_current_user_id();
+				$cwrk_sites = get_field('cowork_site', 'user_'.$user_ID);
+				
+				if ( !empty( $cwrk_sites ) ) {
 		
 			?>
-			
-			<div class="header-member-menu">
-			<?php 
-			
-			$user_ID = get_current_user_id();
-			
-			// echo 'Welcome, registered user nr '.$user_ID.'! ';
-			
-			$cwrk_sites = get_field('cowork_site', 'user_'.$user_ID);
-			
-			// note: if one site = string
-			// if two elements = array
-			
-			function cowork_generate_menu($menu_name) {
-				
-				if ( has_nav_menu( $menu_name ) ) : ?>
-					<nav class="member-navigation" role="navigation">
-						<?php
-							wp_nav_menu( array(
-								'theme_location'  => $menu_name,
-								'menu_class'      => 'clear',
-								'depth'           => 1,
-							) );
-						?>
-					</nav><!-- .footer-navigation -->
-				<?php endif;
-			
-			}
-			
-			if ( is_array($cwrk_sites) ) {
-			
-				
-				// if array has 2 items -> global_menu
-				
-				if ( count($cwrk_sites) == 2 ) {
-					cowork_generate_menu('membres_global');
-				} else {
-				
-					// go through array $cwrk_sites
-					
-					foreach ($cwrk_sites as $key => $site) {
-						if ( $site == 'Neuchâtel') {
-							cowork_generate_menu('membres_neuch');
-						}
-						if ( $site == 'La Chaux-de-Fonds') {
-							cowork_generate_menu('membres_tchaux');
-						} 
-					} // end foreach
-				
-				} // end count test
-				
-				
-			} else if ( is_string($cwrk_sites) ) {
-				
-				// test if Neuchatel or Chaux de Fonds
-				
-				if ($cwrk_sites == 'Neuchâtel') {
-					cowork_generate_menu('membres_neuch');
-				} else if ($cwrk_sites == 'La Chaux-de-Fonds') {
-					cowork_generate_menu('membres_tchaux');
-				}
-				
-			} // end testing array vs string
+							<div class="header-member-menu">
+							<?php 
+							// note: if one site = string
+							// if two elements = array
+							
+							if ( is_array($cwrk_sites) ) {
+							
+								// if array has 2 items -> global_menu
+								if ( count($cwrk_sites) == 2 ) {
+									cowork_generate_menu('membres_global');
+								} else {
+								
+									// go through array $cwrk_sites
+									foreach ($cwrk_sites as $key => $site) {
+										if ( $site == 'Neuchâtel') {
+											cowork_generate_menu('membres_neuch');
+										}
+										if ( $site == 'La Chaux-de-Fonds') {
+											cowork_generate_menu('membres_tchaux');
+										} 
+									} // end foreach
+								
+								} // end count test
+								
+							} else if ( is_string($cwrk_sites) ) {
+								
+								// test if Neuchatel or Chaux de Fonds
+								if ($cwrk_sites == 'Neuchâtel') {
+									cowork_generate_menu('membres_neuch');
+								} else if ($cwrk_sites == 'La Chaux-de-Fonds') {
+									cowork_generate_menu('membres_tchaux');
+								}
+								
+							} // end testing array vs string
 			
 			 ?>
 			</div>
 			
 			<?php 
+				} // end if $cwrk_sites defined
 			} // end if-fuction exists
 		} // end testing if logged in 
 		
 //		$variable = get_field('field_name', 'user_1');
 //		
 //		// do something with $variable
-		
 		
 		 ?>
 	

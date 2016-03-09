@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WooCommerce PDF Invoice\n"
 "POT-Creation-Date: 2016-03-08 11:09+0100\n"
-"PO-Revision-Date: 2016-03-08 11:16+0100\n"
+"PO-Revision-Date: 2016-03-08 15:46+0100\n"
 "Language-Team: psprindys <psprindys@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -987,7 +987,7 @@ msgstr ""
 
 #: ../includes/woo-pdf-plugin-structure.inc.php:347
 msgid "Seller Block"
-msgstr ""
+msgstr "Bloc Vendeur"
 
 #: ../includes/woo-pdf-plugin-structure.inc.php:350
 msgid "Logo image"
@@ -1232,7 +1232,7 @@ msgstr ""
 #: ../includes/woo-pdf-plugin-structure.inc.php:738
 #: ../includes/woo-pdf-plugin-structure.inc.php:740
 msgid "Order Amount"
-msgstr ""
+msgstr "Montant"
 
 #: ../includes/woo-pdf-plugin-structure.inc.php:747
 #: ../includes/woo-pdf-plugin-structure.inc.php:749

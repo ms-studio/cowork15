@@ -21,3 +21,20 @@ function tabula_remove_dashboard_widgets() {
 add_action( 'wp_dashboard_setup', 'tabula_remove_dashboard_widgets' );
 
 
+function cowork_generate_menu($menu_name) {
+	
+	if ( has_nav_menu( $menu_name ) ) : ?>
+		<nav class="member-navigation" role="navigation">
+			<?php
+				wp_nav_menu( array(
+					'theme_location'  => $menu_name,
+					'menu_class'      => 'clear',
+					'depth'           => 1,
+				) );
+			?>
+		</nav><!-- .footer-navigation -->
+	<?php endif;
+
+}
+
+// end of file
