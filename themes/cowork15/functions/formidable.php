@@ -8,7 +8,8 @@
  * The numbers must be between 0 and 6 where 0 is Sunday and 6 is Saturday.
 */
 
-add_action('frm_date_field_js', 'limit_my_date_field');
+//add_action('frm_date_field_js', 'limit_my_date_field');
+
 function limit_my_date_field($field_id){
 
 	$cowork15_affected_fields = array("field_event-date", "field_event-date2");  //change FIELDKEY to the key of your date field

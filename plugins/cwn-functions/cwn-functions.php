@@ -26,3 +26,6 @@ include_once (plugin_dir_path(__FILE__).'cwn-dailymail.php');
 
 // Shortcodes
 include_once (plugin_dir_path(__FILE__).'cwn-shortcodes.php');
+
+// Formidable
+include_once (plugin_dir_path(__FILE__).'cwn-formidable.php');

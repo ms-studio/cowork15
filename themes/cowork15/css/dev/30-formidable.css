@@ -95,7 +95,7 @@ a.frm_save_draft,
  
 .frmcal-calendar td:nth-of-type(6), 
 .frmcal-calendar td:nth-of-type(7) {
-	display: none;
+/*	display: none;*/
  }
  
  .cal-time {
