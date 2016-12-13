@@ -6,7 +6,7 @@
  *
  */
 
-// Change-Detector-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX - for Espresso.app
+// Change-Detector-XXX - for Espresso.app
 
 /**
  * Set the content width based on the theme's design and stylesheet.
@@ -220,6 +220,16 @@ add_action( 'wp_enqueue_scripts', 'cowork_scripts', 11 );
  // Do not dequeue, or we lose some functionality!
  
  $cowork_dev_mode = false;
+ $host = $_SERVER['HTTP_HOST'];
+
+if ( current_user_can('edit_others_pages') ) {
+	 $cowork_dev_mode = true;
+}
+
+if ( $host == 'coworking-neuchatel.ch' ) {
+	 $cowork_dev_mode = true;
+}
+
  
  if ( $cowork_dev_mode == true ) {
  
