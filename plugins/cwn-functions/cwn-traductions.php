@@ -11,8 +11,6 @@ add_action( 'plugins_loaded', 'cowork_load_textdomain', 1 ); // must be earlier 
 
 function cowork_load_textdomain() {
 			
-			// 
-			
 			// woocommerce
 			
 			load_plugin_textdomain( 
@@ -46,6 +44,29 @@ function cowork_load_textdomain() {
 			);
 			
 }
+
+
+// A stronger override for WooCommerce
+
+// Code to be placed in functions.php of your theme or a custom plugin file.
+add_filter( 'load_textdomain_mofile', 'load_custom_plugin_translation_file', 10, 2 );
+
+/*
+ * Replace 'textdomain' with your plugin's textdomain. e.g. 'woocommerce'. 
+ * File to be named, for example, yourtranslationfile-en_GB.mo
+ * File to be placed, for example, wp-content/lanaguages/textdomain/yourtranslationfile-en_GB.mo
+ */
+function load_custom_plugin_translation_file( $mofile, $domain ) {
+
+  if ( 'woocommerce' === $domain ) {
+    // $mofile = WP_PLUGIN_DIR . '/textdomain/yourtranslationfile-' . get_locale() . '.mo';
+    $mofile = WP_PLUGIN_DIR . '/cwn-functions/languages/woocommerce-' . get_locale() . '.mo';
+  }
+  return $mofile;
+}
+
+
+
 
 // filtering for Active => Actif
 

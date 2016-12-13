@@ -2,12 +2,12 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Subscriptio\n"
 "POT-Creation-Date: 2016-03-08 11:08+0100\n"
-"PO-Revision-Date: 2016-03-08 18:15+0100\n"
+"PO-Revision-Date: 2016-11-29 21:04+0100\n"
 "Language-Team: RightPress <info@rightpress.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.7\n"
+"X-Generator: Poedit 1.8.11\n"
 "X-Poedit-KeywordsList: __;_e;_c;__ngettext:1,2;_n:1,2;_nc:1,2;"
 "__ngettext_noop:1,2;_n_noop:1,2;_x:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_ex:1,2c;"
 "esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e\n"
@@ -301,7 +301,7 @@ msgstr ""
 
 #: includes/classes/emails/subscriptio-email-customer-subscription-suspended.class.php:29
 msgid "Subscription suspended"
-msgstr ""
+msgstr "Abonnement en suspens"
 
 #: includes/classes/emails/subscriptio-email-customer-subscription-suspended.class.php:30
 msgid ""
@@ -1007,7 +1007,7 @@ msgstr ""
 
 #: includes/classes/lazy/subscriptio-my-account.class.php:316
 msgid "Subscription has been cancelled."
-msgstr ""
+msgstr "L’abonnement a été résilié."
 
 #: includes/classes/libraries/rightpress-updates.class.php:212
 #: includes/classes/libraries/rightpress-updates.class.php:220
@@ -1159,7 +1159,7 @@ msgstr ""
 
 #: includes/classes/subscriptio-scheduler.class.php:429
 msgid "Subscription suspended."
-msgstr ""
+msgstr "Abonnement en suspens."
 
 #: includes/classes/subscriptio-scheduler.class.php:479
 msgid "Payment due date is in the future, no reason to cancel."
@@ -1184,7 +1184,7 @@ msgstr "Rappel de payement envoyé."
 
 #: includes/classes/subscriptio-scheduler.class.php:632
 msgid "Subscription was automatically resumed."
-msgstr ""
+msgstr "L’abonnement a été automatiquement renouvelé."
 
 #: includes/classes/subscriptio-subscription-product.class.php:80
 msgid "Sell this product as a subscription product with recurring billing."
@@ -2477,7 +2477,7 @@ msgstr ""
 #: templates/emails/plain/customer-subscription-resumed.php:22
 #: templates/emails/plain/customer-subscription-suspended.php:22
 msgid "Subscription:"
-msgstr ""
+msgstr "Abonnement:"
 
 #: templates/emails/customer-subscription-completed-order.php:16
 #: templates/emails/plain/customer-subscription-completed-order.php:14
@@ -2824,6 +2824,8 @@ msgid ""
 "Subscription <mark class=\"subscriptio_subscription_info_number\">%s</mark> "
 "has been <mark class=\"subscriptio_subscription_info_status\">%s</mark>."
 msgstr ""
+"L’abonnement <mark class=\"subscriptio_subscription_info_number\">%s</mark> "
+"a été <mark class=\"subscriptio_subscription_info_status\">%s</mark>."
 
 #: templates/myaccount/view-subscription.php:25
 #, php-format
