@@ -29,3 +29,8 @@
 .woocommerce .site-content input.button.alt:hover {
 	background: #242424;
 }
+
+
+.woocommerce .woocommerce-Price-amount {
+	color: #000;
+}
