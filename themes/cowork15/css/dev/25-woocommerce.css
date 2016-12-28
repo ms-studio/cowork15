@@ -34,3 +34,8 @@
 .woocommerce .woocommerce-Price-amount {
 	color: #000;
 }
+
+/* Bug dans Subscriptio ? */
+.product-subtotal span.rabais {
+	display: none;
+}

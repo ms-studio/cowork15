@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Subscriptio\n"
 "POT-Creation-Date: 2016-03-08 11:08+0100\n"
-"PO-Revision-Date: 2016-12-28 16:54+0100\n"
+"PO-Revision-Date: 2016-12-28 18:30+0100\n"
 "Language-Team: RightPress <info@rightpress.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1216,7 +1216,7 @@ msgstr ""
 #: includes/classes/subscriptio-subscription-product.class.php:714
 #, php-format
 msgid "%1$s now then %2$s"
-msgstr ""
+msgstr "<span class=\"rabais\">%1$s maintenant, ensuite</span> %2$s"
 
 #: includes/classes/subscriptio-subscription-product.class.php:747
 #: includes/classes/subscriptio-subscription-product.class.php:757
@@ -1817,11 +1817,11 @@ msgstr "Rappels de paiement"
 
 #: includes/subscriptio-plugin-settings.inc.php:194
 msgid "Enable payment reminders"
-msgstr ""
+msgstr "Activer les rappels de paiement"
 
 #: includes/subscriptio-plugin-settings.inc.php:204
 msgid "Send reminders before"
-msgstr ""
+msgstr "Envoyer des rappels (jours avant)"
 
 #: includes/subscriptio-plugin-settings.inc.php:205
 msgid "day(s) (separate values by comma)"
@@ -1829,15 +1829,15 @@ msgstr ""
 
 #: includes/subscriptio-plugin-settings.inc.php:217
 msgid "Overdue Period"
-msgstr ""
+msgstr "Période de retard"
 
 #: includes/subscriptio-plugin-settings.inc.php:220
 msgid "Enable overdue period"
-msgstr ""
+msgstr "Activer la période de retard"
 
 #: includes/subscriptio-plugin-settings.inc.php:230
 msgid "Overdue period length"
-msgstr ""
+msgstr "Durée de la période de retard"
 
 #: includes/subscriptio-plugin-settings.inc.php:243
 msgid "Suspensions"
@@ -1845,7 +1845,7 @@ msgstr ""
 
 #: includes/subscriptio-plugin-settings.inc.php:246
 msgid "Enable suspensions"
-msgstr ""
+msgstr "Activer les suspensions"
 
 #: includes/subscriptio-plugin-settings.inc.php:256
 msgid "Suspension period length"
@@ -2313,6 +2313,9 @@ msgid ""
 "displayed in illustration are trial periods, expiration dates and "
 "subscription pausing and resuming capability."
 msgstr ""
+"Les rappels de paiement, période de retard et les suspensions sont "
+"facultatifs. <br> Ne sont pas affichés dans l'illustration les périodes "
+"essai, les dates d'expiration et la capacité de suspendre un abonnement."
 
 #: subscriptio.php:1776
 msgid "Your settings have been saved."
