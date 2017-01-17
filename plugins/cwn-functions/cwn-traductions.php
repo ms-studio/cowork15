@@ -16,20 +16,18 @@ function load_custom_plugin_translation_file( $mofile, $domain ) {
 	// filename ending
 	$file = '-' . get_locale() . '.mo';
 	
-  if ( 'woocommerce' === $domain ) {
-  
-    $mofile = $folder.$domain.$file;
-  
-  } else if ( 'subscriptio' === $domain ) {
-  
-  	$mofile = $folder.$domain.$file;
-  	
-  } else if ( 'woocommerce-membership' === $domain ) {
-  
-  	$mofile = $folder.$domain.$file;
-  	
-  }
-  
+	$plugins = array(
+		'woocommerce',
+		'subscriptio',
+		'woocommerce-membership'
+	);
+	
+	foreach ($plugins as &$plugin) {
+		if ( $plugin === $domain ) {
+			$mofile = $folder.$domain.$file;
+		}
+	}
+	
   return $mofile;
 
 }
