@@ -82,11 +82,17 @@ get_header(); ?>
 						
 						?>
 						<h2 id="tarifs" class="h2 title-style"><?php the_title(); ?></a></h2>
+						<section class="layer plans tarifs">
+						<section>
 						<?php
 						
-						// content
-						
 						the_content('Read the rest of this entry &raquo;');
+	
+						?>
+						<div style="clear: both;"></div>
+						</section>
+						</section>
+						<?php
 						
 						edit_post_link( __( 'Edit', 'edin' ), '<footer class="entry-footer modify-link"><span class="edit-link">', '</span></footer>' );
 				
@@ -99,7 +105,6 @@ get_header(); ?>
 	
 	
 			// ADD-ONS
-			
 			
 				$custom_query = new WP_Query( array(
 							'posts_per_page' => 1,
@@ -116,11 +121,18 @@ get_header(); ?>
 							
 							?>
 							<h2 id="tarifs" class="h2 title-style"><?php the_title(); ?></a></h2>
+							
+							<section class="layer plans tarifs"><section>
 							<?php
 							
 							// content
 							
 							the_content('Read the rest of this entry &raquo;');
+							
+							?>
+							<div style="clear: both;"></div>
+							</section></section>
+							<?php
 							
 							edit_post_link( __( 'Edit', 'edin' ), '<footer class="entry-footer modify-link"><span class="edit-link">', '</span></footer>' );
 					
