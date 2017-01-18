@@ -583,3 +583,102 @@ body.logged-in #menu-item-931 {
 }
 
 /* @end */
+
+/* @group Testimonials */
+
+.testimonials .list-testimonials {
+  margin-top: 20px;
+}
+
+.list-testimonials {
+  font-size: 16px;
+}
+.list-testimonials .testimonial {
+  margin-bottom: 40px;
+}
+.list-testimonials .testimonial:last-child {
+  margin-bottom: 0;
+}
+.list-testimonials p {
+  line-height: 1.4em;
+}
+.list-testimonials p:last-child {
+  margin-bottom: 0;
+}
+
+.list-testimonials .entry-content {
+  margin-bottom: 20px;
+  padding-left: 1.2rem;
+}
+.list-testimonials .entry-content p {
+  font-size: 1.125em;
+}
+.list-testimonials .entry-content p:first-child:before {
+  content: "“";
+  margin-left: -1.2rem;
+}
+.list-testimonials .entry-content p:last-child:after {
+  content: "”";
+  text-align: right;
+}
+.list-testimonials .entry-content p:first-child:before,
+.list-testimonials .entry-content p:last-child:after {
+  color: #b2b2b2;
+  display: inline-block;
+  font-size: 1.8em;
+  position: relative;
+  top: .3em;
+  width: 1.2rem;
+}
+
+.list-testimonials .entry-meta {
+  border: 0;
+  font-size: 1em;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.list-testimonials .entry-meta p {
+  margin-bottom: 0;
+}
+.list-testimonials .entry-meta a {
+  font-weight: 400;
+}
+.list-testimonials .entry-meta .name {
+  font-family: "camingodos-web","Arial Bold",Helvetica,sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.list-testimonials .entry-img {
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.list-testimonials .entry-img img {
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: top;
+  width: 100px;
+}
+
+@media screen and (min-width: 1020px) {
+  
+  .testimonials .list-testimonials {
+    margin-top: 40px;
+  }
+  
+  .list-testimonials .testimonial {
+    clear: none;
+    float: left;
+    margin-right: 5%;
+    width: 30%;
+  }
+  .list-testimonials .testimonial:nth-child(3n) {
+    margin-right: 0;
+  }
+  
+}
+
+/* @end */
