@@ -174,7 +174,7 @@ get_header(); ?>
             <?php if ( has_post_thumbnail() ) : ?>
     				<div class="entry-img">
 							<figure class="img">
-								<?php the_post_thumbnail('thumbnail'); ?>
+								<?php the_post_thumbnail('square-thumb'); ?>
 							</figure>
 						</div><!-- .entry-img -->
 						<?php endif; ?>
