@@ -2,15 +2,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Subscriptio\n"
 "POT-Creation-Date: 2016-03-08 11:08+0100\n"
-"PO-Revision-Date: 2017-01-24 11:00+0100\n"
+"PO-Revision-Date: 2017-03-07 17:20+0100\n"
 "Language-Team: RightPress <info@rightpress.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.11\n"
-"X-Poedit-KeywordsList: __;_e;_c;__ngettext:1,2;_n:1,2;_nc:1,2;"
-"__ngettext_noop:1,2;_n_noop:1,2;_x:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_ex:1,2c;"
-"esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e\n"
+"X-Generator: Poedit 1.8.12\n"
+"X-Poedit-KeywordsList: __;_e;_c;__ngettext:1,2;_n:1,2;_nc:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_x:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_ex:1,2c;esc_attr__;esc_attr_e;"
+"esc_attr_x:1,2c;esc_html__;esc_html_e\n"
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -26,12 +26,12 @@ msgstr "Abonnement annulé"
 #: includes/classes/emails/subscriptio-email-customer-subscription-cancelled.class.php:30
 msgid ""
 "Subscription cancelled emails are sent to customers when subscriptions are "
-"cancelled - either manually (by customer or shop manager) or automatically "
-"(due to non-payment)."
+"cancelled - either manually (by customer or shop manager) or automatically (due to "
+"non-payment)."
 msgstr ""
 "Les emails pour les abonnement annulés sont envoyés aux clients lorsque "
-"l’abonnement est annulé - soit manuellement (par le client ou "
-"l’administrateur) ou automatiquement (pour cause de non-paiement)."
+"l’abonnement est annulé - soit manuellement (par le client ou l’administrateur) ou "
+"automatiquement (pour cause de non-paiement)."
 
 #: includes/classes/emails/subscriptio-email-customer-subscription-cancelled.class.php:32
 msgid "Your subscription has been cancelled"
@@ -47,8 +47,8 @@ msgstr "Abonnement finalisé"
 
 #: includes/classes/emails/subscriptio-email-customer-subscription-completed-order.class.php:30
 msgid ""
-"Subscription completed order emails are sent to the customer when "
-"subscription renewal order is marked complete."
+"Subscription completed order emails are sent to the customer when subscription "
+"renewal order is marked complete."
 msgstr ""
 "Les emails pour les abonnements traités sont envoyés au client lorsqu’un "
 "renouvellement d’abonnement est marqué terminé."
@@ -58,23 +58,18 @@ msgid "Your subscription renewal order is complete"
 msgstr "Votre commande de renouvellement d’abonnement a été traitée"
 
 #: includes/classes/emails/subscriptio-email-customer-subscription-completed-order.class.php:33
-msgid ""
-"Your {site_title} subscription renewal order from {order_date} is complete"
-msgstr ""
-"Le paiement pour votre abonnement {site_title} du {order_date} a été validé"
+msgid "Your {site_title} subscription renewal order from {order_date} is complete"
+msgstr "Le paiement pour votre abonnement {site_title} du {order_date} a été validé"
 
 #: includes/classes/emails/subscriptio-email-customer-subscription-completed-order.class.php:35
 msgid "Your subscription renewal order is complete - download your files"
-msgstr ""
-"Le renouvellement de votre abonnement est terminé - téléchargez vos fichiers"
+msgstr "Le renouvellement de votre abonnement est terminé - téléchargez vos fichiers"
 
 #: includes/classes/emails/subscriptio-email-customer-subscription-completed-order.class.php:36
-msgid ""
-"Your {site_title} subscription renewal order is complete - download your "
-"files"
+msgid "Your {site_title} subscription renewal order is complete - download your files"
 msgstr ""
-"Le paiement pour votre abonnement {site_title} a été validé - téléchargez "
-"vos fichiers"
+"Le paiement pour votre abonnement {site_title} a été validé - téléchargez vos "
+"fichiers"
 
 #: includes/classes/emails/subscriptio-email-customer-subscription-completed-order.class.php:134
 #: includes/classes/emails/subscriptio-email.class.php:144
@@ -111,7 +106,7 @@ msgstr "Objet"
 #: includes/classes/emails/subscriptio-email.class.php:165
 #, php-format
 msgid "Defaults to <code>%s</code>"
-msgstr ""
+msgstr "Par défaut: <code>%s</code>"
 
 #: includes/classes/emails/subscriptio-email-customer-subscription-completed-order.class.php:153
 msgid "Email Heading"
@@ -156,8 +151,8 @@ msgstr "Abonnement expiré"
 
 #: includes/classes/emails/subscriptio-email-customer-subscription-expired.class.php:30
 msgid ""
-"Subscription expired emails are sent to customers when subscriptions expire "
-"(if they are configured to expire)."
+"Subscription expired emails are sent to customers when subscriptions expire (if "
+"they are configured to expire)."
 msgstr ""
 
 #: includes/classes/emails/subscriptio-email-customer-subscription-expired.class.php:32
@@ -174,11 +169,11 @@ msgstr "Nouvel abonnement"
 
 #: includes/classes/emails/subscriptio-email-customer-subscription-new-order.class.php:30
 msgid ""
-"Subscription new order emails are sent to the customer when a new renewal "
-"order is generated."
+"Subscription new order emails are sent to the customer when a new renewal order is "
+"generated."
 msgstr ""
-"Les courriels de nouvel abonnement sont envoyés au client lorsqu’une "
-"nouvelle commande de renouvellement est générée."
+"Les courriels de nouvel abonnement sont envoyés au client lorsqu’une nouvelle "
+"commande de renouvellement est générée."
 
 #: includes/classes/emails/subscriptio-email-customer-subscription-new-order.class.php:32
 #: includes/classes/emails/subscriptio-email-customer-subscription-new-order.class.php:33
@@ -191,12 +186,12 @@ msgstr "Abonnement en pause"
 
 #: includes/classes/emails/subscriptio-email-customer-subscription-paused.class.php:30
 msgid ""
-"Subscription paused emails are sent to customers when subscriptions are "
-"paused by administrator or customers (if they are allowed to)."
+"Subscription paused emails are sent to customers when subscriptions are paused by "
+"administrator or customers (if they are allowed to)."
 msgstr ""
 "Les emails pour les abonnement en pause sont envoyés aux clients quand les "
-"abonnements sont mis en pause par l'administrateur ou les clients (s'ils y "
-"sont autorisés)."
+"abonnements sont mis en pause par l'administrateur ou les clients (s'ils y sont "
+"autorisés)."
 
 #: includes/classes/emails/subscriptio-email-customer-subscription-paused.class.php:32
 msgid "Your subscription has been paused"
@@ -212,15 +207,15 @@ msgstr "Paiement de l’abonnement en retard"
 
 #: includes/classes/emails/subscriptio-email-customer-subscription-payment-overdue.class.php:30
 msgid ""
-"Subscription payment overdue emails are sent to customers when they fail to "
-"pay by Payment Due date and you allow grace period."
+"Subscription payment overdue emails are sent to customers when they fail to pay by "
+"Payment Due date and you allow grace period."
 msgstr ""
-"Les emails pour les paiements en retard sont envoyées aux clients qui n'ont "
-"pas payé avant la date d’échéance."
+"Les emails pour les paiements en retard sont envoyées aux clients qui n'ont pas "
+"payé avant la date d’échéance."
 
 #: includes/classes/emails/subscriptio-email-customer-subscription-payment-overdue.class.php:32
 msgid "Overdue payment"
-msgstr ""
+msgstr "Retard de paiement"
 
 #: includes/classes/emails/subscriptio-email-customer-subscription-payment-overdue.class.php:33
 msgid "Payment for renewal order {order_number} is overdue"
@@ -230,7 +225,7 @@ msgstr "Retard de paiement pour votre abonnement {order_number}"
 #: includes/classes/emails/subscriptio-email-customer-subscription-payment-reminder.class.php:88
 #: includes/classes/subscriptio-subscription.class.php:74
 msgid "suspended"
-msgstr ""
+msgstr "suspendu"
 
 #: includes/classes/emails/subscriptio-email-customer-subscription-payment-overdue.class.php:84
 #: includes/classes/emails/subscriptio-email-customer-subscription-payment-reminder.class.php:91
@@ -242,22 +237,19 @@ msgstr "résilié"
 #: includes/classes/emails/subscriptio-email-customer-subscription-payment-reminder.class.php:29
 #: includes/classes/emails/subscriptio-email-customer-subscription-payment-reminder.class.php:32
 msgid "Subscription payment reminder"
-msgstr "Rappel de paiement pour l’abonnement"
+msgstr "Rappel de paiement"
 
 #: includes/classes/emails/subscriptio-email-customer-subscription-payment-reminder.class.php:30
 msgid ""
-"Subscription payment reminder emails are sent to customers at predefined "
-"intervals when they have outstanding subscription payments."
+"Subscription payment reminder emails are sent to customers at predefined intervals "
+"when they have outstanding subscription payments."
 msgstr ""
 "Les emails de rappel de paiement sont envoyées aux clients à des intervalles "
-"prédéfinis lorsqu'ils ont des paiements d'abonnement qui ne sont pas encore "
-"réglés."
+"prédéfinis lorsqu'ils ont des paiements d'abonnement qui ne sont pas encore réglés."
 
 #: includes/classes/emails/subscriptio-email-customer-subscription-payment-reminder.class.php:33
-msgid ""
-"Payment for subscription renewal order {order_number} has not been received"
-msgstr ""
-"Le paiement pour la facture de renouvellement {order_number} n’a pas été reçu"
+msgid "Payment for subscription renewal order {order_number} has not been received"
+msgstr "Le paiement pour la facture de renouvellement {order_number} n’a pas été reçu"
 
 #: includes/classes/emails/subscriptio-email-customer-subscription-payment-reminder.class.php:83
 msgid "marked overdue"
@@ -265,7 +257,7 @@ msgstr "marqué comme en retard"
 
 #: includes/classes/emails/subscriptio-email-customer-subscription-payment-reminder.class.php:85
 msgid "suspension"
-msgstr ""
+msgstr "suspension"
 
 #: includes/classes/emails/subscriptio-email-customer-subscription-payment-reminder.class.php:85
 msgid "cancellation"
@@ -277,11 +269,11 @@ msgstr "Abonnement en cours de traitement"
 
 #: includes/classes/emails/subscriptio-email-customer-subscription-processing-order.class.php:30
 msgid ""
-"Subscription processing order emails are sent to customers after payment and "
-"before order is complete."
+"Subscription processing order emails are sent to customers after payment and before "
+"order is complete."
 msgstr ""
-"Les emails de traitement des abonnements sont envoyés aux clients après le "
-"paiement et avant la finalisation de la commande."
+"Les emails de traitement des abonnements sont envoyés aux clients après le paiement "
+"et avant la finalisation de la commande."
 
 #: includes/classes/emails/subscriptio-email-customer-subscription-processing-order.class.php:32
 msgid "Thank you for your order"
@@ -297,8 +289,8 @@ msgstr "Abonnement réactivé"
 
 #: includes/classes/emails/subscriptio-email-customer-subscription-resumed.class.php:30
 msgid ""
-"Subscription resumed emails are sent to customers when subscriptions are "
-"resumed (unpaused) by administrator or customers (if they are allowed to)."
+"Subscription resumed emails are sent to customers when subscriptions are resumed "
+"(unpaused) by administrator or customers (if they are allowed to)."
 msgstr ""
 
 #: includes/classes/emails/subscriptio-email-customer-subscription-resumed.class.php:32
@@ -319,8 +311,8 @@ msgid ""
 "suspended due to non-payment (if suspensions are enabled)."
 msgstr ""
 "Les emails pour les abonnement annulés sont envoyés aux clients lorsque les "
-"abonnements sont suspendus pour cause de non-paiement (si les suspensions "
-"sont activées)."
+"abonnements sont suspendus pour cause de non-paiement (si les suspensions sont "
+"activées)."
 
 #: includes/classes/emails/subscriptio-email-customer-subscription-suspended.class.php:32
 msgid "Your subscription has been suspended"
@@ -341,10 +333,9 @@ msgstr ""
 #: includes/classes/gateways/paypal/subscriptio-paypal-gateway.class.php:37
 #, php-format
 msgid ""
-"PayPal by Subscriptio is a PayPal payment gateway extension that enables "
-"automatic recurring payments for subscription products. It uses <a href=\"%s"
-"\">PayPal Adaptive Payments API</a> to handle payment preapprovals and "
-"recurring billing."
+"PayPal by Subscriptio is a PayPal payment gateway extension that enables automatic "
+"recurring payments for subscription products. It uses <a href=\"%s\">PayPal "
+"Adaptive Payments API</a> to handle payment preapprovals and recurring billing."
 msgstr ""
 
 #: includes/classes/gateways/paypal/subscriptio-paypal-gateway.class.php:103
@@ -352,8 +343,7 @@ msgid "Subscriptio PayPal payment gateway requires WooCommerce 2.1 or later."
 msgstr ""
 
 #: includes/classes/gateways/paypal/subscriptio-paypal-gateway.class.php:108
-msgid ""
-"Subscriptio PayPal payment gateway requires all API credentials to be set."
+msgid "Subscriptio PayPal payment gateway requires all API credentials to be set."
 msgstr ""
 
 #: includes/classes/gateways/paypal/subscriptio-paypal-gateway.class.php:250
@@ -383,8 +373,7 @@ msgstr ""
 #: includes/classes/gateways/paypal/subscriptio-paypal-gateway.class.php:464
 msgid "We have not charged you for this order. Please try again."
 msgstr ""
-"Le montant n'a pas été prélevé pour cette commande. Veuillez essayer de "
-"nouveau."
+"Le montant n'a pas été prélevé pour cette commande. Veuillez essayer de nouveau."
 
 #: includes/classes/gateways/paypal/subscriptio-paypal-gateway.class.php:518
 #: includes/classes/gateways/paypal/subscriptio-paypal-gateway.class.php:550
@@ -467,8 +456,8 @@ msgstr ""
 #: includes/classes/gateways/paypal/subscriptio-paypal-gateway.class.php:719
 #, php-format
 msgid ""
-"Refer to <a href=\"%s\">this knowledge base article</a> for some guidance on "
-"how to acquire your API credentials."
+"Refer to <a href=\"%s\">this knowledge base article</a> for some guidance on how to "
+"acquire your API credentials."
 msgstr ""
 
 #: includes/classes/gateways/paypal/subscriptio-paypal-gateway.class.php:722
@@ -541,8 +530,8 @@ msgstr ""
 
 #: includes/classes/gateways/paypal/subscriptio-paypal-gateway.class.php:772
 msgid ""
-"The following settings control how recurring payments will work on your "
-"online store."
+"The following settings control how recurring payments will work on your online "
+"store."
 msgstr ""
 
 #: includes/classes/gateways/paypal/subscriptio-paypal-gateway.class.php:775
@@ -555,8 +544,7 @@ msgstr ""
 
 #: includes/classes/gateways/paypal/subscriptio-paypal-gateway.class.php:778
 msgid ""
-"Force automatic subscription payments (hides the optional preapproval "
-"checkbox)"
+"Force automatic subscription payments (hides the optional preapproval checkbox)"
 msgstr ""
 
 #: includes/classes/gateways/paypal/subscriptio-paypal-gateway.class.php:782
@@ -565,8 +553,8 @@ msgstr ""
 
 #: includes/classes/gateways/paypal/subscriptio-paypal-gateway.class.php:784
 msgid ""
-"Choose what action you want to perform when user cancels the preapproval "
-"from PayPal account settings."
+"Choose what action you want to perform when user cancels the preapproval from "
+"PayPal account settings."
 msgstr ""
 
 #: includes/classes/gateways/paypal/subscriptio-paypal-gateway.class.php:787
@@ -583,10 +571,9 @@ msgstr ""
 
 #: includes/classes/gateways/paypal/subscriptio-paypal-gateway.class.php:794
 msgid ""
-"This controls API property endingDate. Enter custom number of months to "
-"change default of 12 months. Enter zero to not send this property to PayPal "
-"at all. Contact PayPal in advance to get this limitation lifted for your "
-"account."
+"This controls API property endingDate. Enter custom number of months to change "
+"default of 12 months. Enter zero to not send this property to PayPal at all. "
+"Contact PayPal in advance to get this limitation lifted for your account."
 msgstr ""
 
 #: includes/classes/gateways/paypal/subscriptio-paypal-gateway.class.php:799
@@ -595,10 +582,10 @@ msgstr ""
 
 #: includes/classes/gateways/paypal/subscriptio-paypal-gateway.class.php:801
 msgid ""
-"This controls API property maxTotalAmountOfAllPayments. Enter custom decimal "
-"number to change default of $2000 USD (or equivalent in other currency). "
-"Enter zero to not send this property to PayPal at all. Contact PayPal in "
-"advance to get this limitation lifted for your account."
+"This controls API property maxTotalAmountOfAllPayments. Enter custom decimal number "
+"to change default of $2000 USD (or equivalent in other currency). Enter zero to not "
+"send this property to PayPal at all. Contact PayPal in advance to get this "
+"limitation lifted for your account."
 msgstr ""
 
 #: includes/classes/gateways/paypal/subscriptio-paypal-gateway.class.php:806
@@ -611,9 +598,9 @@ msgstr ""
 
 #: includes/classes/gateways/paypal/subscriptio-paypal-gateway.class.php:809
 msgid ""
-"For example, if a subscription product with monthly payments of $10 is set "
-"to expire after 24 months, this extension would send 24 months as max term "
-"and $240 as max total."
+"For example, if a subscription product with monthly payments of $10 is set to "
+"expire after 24 months, this extension would send 24 months as max term and $240 as "
+"max total."
 msgstr ""
 
 #: includes/classes/gateways/paypal/subscriptio-paypal-gateway.class.php:827
@@ -669,8 +656,7 @@ msgid "User cancelled preapproval agreement - subscription cancelled as well."
 msgstr ""
 
 #: includes/classes/gateways/paypal/subscriptio-paypal-subscriptions.class.php:58
-msgid ""
-"Automatic subscription payment failed: preapproval key not found (PayPal)"
+msgid "Automatic subscription payment failed: preapproval key not found (PayPal)"
 msgstr ""
 
 #: includes/classes/gateways/paypal/subscriptio-paypal-subscriptions.class.php:77
@@ -708,18 +694,16 @@ msgstr ""
 
 #: includes/classes/gateways/stripe/subscriptio-stripe-gateway.class.php:96
 msgid ""
-"Subscriptio Stripe payment gateway requires full SSL support and enforcement "
-"during Checkout. Only test mode will work until this is solved."
+"Subscriptio Stripe payment gateway requires full SSL support and enforcement during "
+"Checkout. Only test mode will work until this is solved."
 msgstr ""
 
 #: includes/classes/gateways/stripe/subscriptio-stripe-gateway.class.php:101
-msgid ""
-"Subscriptio Stripe payment gateway requires Stripe Secret Key to be set."
+msgid "Subscriptio Stripe payment gateway requires Stripe Secret Key to be set."
 msgstr ""
 
 #: includes/classes/gateways/stripe/subscriptio-stripe-gateway.class.php:106
-msgid ""
-"Subscriptio Stripe payment gateway requires Stripe Publishable Key to be set."
+msgid "Subscriptio Stripe payment gateway requires Stripe Publishable Key to be set."
 msgstr ""
 
 #: includes/classes/gateways/stripe/subscriptio-stripe-gateway.class.php:154
@@ -731,8 +715,7 @@ msgstr ""
 #: includes/classes/gateways/stripe/subscriptio-stripe-gateway.class.php:189
 #: includes/classes/gateways/stripe/subscriptio-stripe-gateway.class.php:204
 msgid "We have not charged your card. Please try again."
-msgstr ""
-"Le montant n'a pas été prélevé sur la carte. Veuillez essayer de nouveau."
+msgstr "Le montant n'a pas été prélevé sur la carte. Veuillez essayer de nouveau."
 
 #: includes/classes/gateways/stripe/subscriptio-stripe-gateway.class.php:170
 #: includes/classes/gateways/stripe/subscriptio-stripe-subscriptions.class.php:58
@@ -755,8 +738,8 @@ msgstr ""
 #: includes/classes/gateways/stripe/subscriptio-stripe-subscriptions.class.php:92
 #, php-format
 msgid ""
-"Stripe charge %s authorized and will be charged as soon as you start "
-"processing this order. Authorization will expire in 7 days."
+"Stripe charge %s authorized and will be charged as soon as you start processing "
+"this order. Authorization will expire in 7 days."
 msgstr ""
 
 #: includes/classes/gateways/stripe/subscriptio-stripe-gateway.class.php:276
@@ -772,8 +755,8 @@ msgstr ""
 #: includes/classes/gateways/stripe/subscriptio-stripe-gateway.class.php:389
 msgid "We were not able to connect to the payment gateway. Please try again."
 msgstr ""
-"Impossible d'établir un connexion avec la passerelle de paiement. Veuillez "
-"essayer de nouveau."
+"Impossible d'établir un connexion avec la passerelle de paiement. Veuillez essayer "
+"de nouveau."
 
 #: includes/classes/gateways/stripe/subscriptio-stripe-gateway.class.php:394
 msgid "Payment gateway error:"
@@ -829,8 +812,8 @@ msgstr ""
 
 #: includes/classes/gateways/stripe/subscriptio-stripe-gateway.class.php:559
 msgid ""
-"An error occurred due to requests hitting the API too quickly. Please let us "
-"know if you're consistently running into this error."
+"An error occurred due to requests hitting the API too quickly. Please let us know "
+"if you're consistently running into this error."
 msgstr ""
 
 #: includes/classes/gateways/stripe/subscriptio-stripe-gateway.class.php:605
@@ -855,9 +838,9 @@ msgstr ""
 
 #: includes/classes/gateways/stripe/subscriptio-stripe-gateway.class.php:618
 msgid ""
-"If unchecked, an authorization is issued at the time of purchase but the "
-"charge itself is captured when you start processed the order. Uncaptured "
-"charges expire in 7 days."
+"If unchecked, an authorization is issued at the time of purchase but the charge "
+"itself is captured when you start processed the order. Uncaptured charges expire in "
+"7 days."
 msgstr ""
 
 #: includes/classes/gateways/stripe/subscriptio-stripe-gateway.class.php:625
@@ -890,8 +873,8 @@ msgstr ""
 
 #: includes/classes/gateways/stripe/subscriptio-stripe-gateway.class.php:646
 msgid ""
-"Stripe Checkout modal allows custom seller image to be displayed. Enter your "
-"custom 128x128 px image URL here (should be hosted on a secure location)."
+"Stripe Checkout modal allows custom seller image to be displayed. Enter your custom "
+"128x128 px image URL here (should be hosted on a secure location)."
 msgstr ""
 
 #: includes/classes/gateways/stripe/subscriptio-stripe-gateway.class.php:650
@@ -899,8 +882,7 @@ msgid "Test Secret Key"
 msgstr ""
 
 #: includes/classes/gateways/stripe/subscriptio-stripe-gateway.class.php:652
-msgid ""
-"Test Secret Key from your Stripe Account (under Account Settings > API Keys)."
+msgid "Test Secret Key from your Stripe Account (under Account Settings > API Keys)."
 msgstr ""
 
 #: includes/classes/gateways/stripe/subscriptio-stripe-gateway.class.php:656
@@ -962,8 +944,8 @@ msgstr ""
 #: includes/classes/subscriptio-subscription-product.class.php:79
 #: includes/classes/subscriptio-subscription-product.class.php:154
 #: includes/classes/subscriptio-subscription-product.class.php:333
-#: includes/views/backend/subscription/subscription-details.php:23
-#: subscriptio.php:382 subscriptio.php:677
+#: includes/views/backend/subscription/subscription-details.php:23 subscriptio.php:382
+#: subscriptio.php:677
 msgid "Subscription"
 msgstr "Abonnement"
 
@@ -1042,8 +1024,8 @@ msgstr ""
 #: includes/classes/libraries/rightpress-updates.class.php:355
 #, php-format
 msgid ""
-"New version of <strong>%s</strong> is available. To enable automatic "
-"updates, enter your CodeCanyon Purchase Code below."
+"New version of <strong>%s</strong> is available. To enable automatic updates, enter "
+"your CodeCanyon Purchase Code below."
 msgstr ""
 
 #: includes/classes/libraries/rightpress-updates.class.php:374
@@ -1172,8 +1154,7 @@ msgstr ""
 #: includes/classes/subscriptio-scheduler.class.php:421
 msgid "Payment due date is in the future, no reason to suspend."
 msgstr ""
-"La date d’échéance du paiement est dans le futur, aucune raison de le "
-"suspendre."
+"La date d’échéance du paiement est dans le futur, aucune raison de le suspendre."
 
 #: includes/classes/subscriptio-scheduler.class.php:429
 msgid "Subscription suspended."
@@ -1181,8 +1162,7 @@ msgstr "Abonnement en suspens."
 
 #: includes/classes/subscriptio-scheduler.class.php:479
 msgid "Payment due date is in the future, no reason to cancel."
-msgstr ""
-"La date d’échéance du paiement est dans le futur, aucune raison de l’annuler."
+msgstr "La date d’échéance du paiement est dans le futur, aucune raison de l’annuler."
 
 #: includes/classes/subscriptio-scheduler.class.php:487
 msgid "Subscription cancelled."
@@ -1209,8 +1189,7 @@ msgid "Sell this product as a subscription product with recurring billing."
 msgstr ""
 
 #: includes/classes/subscriptio-subscription-product.class.php:154
-msgid ""
-"Sell this variable product as a subscription product with recurring billing."
+msgid "Sell this variable product as a subscription product with recurring billing."
 msgstr ""
 
 #: includes/classes/subscriptio-subscription-product.class.php:355
@@ -1265,14 +1244,14 @@ msgstr ""
 
 #: includes/classes/subscriptio-subscription-product.class.php:862
 msgid ""
-"Sorry, but you are not allowed to purchase this product, because you already "
-"have it in currently active subscription."
+"Sorry, but you are not allowed to purchase this product, because you already have "
+"it in currently active subscription."
 msgstr ""
 
 #: includes/classes/subscriptio-subscription-product.class.php:879
 msgid ""
-"Sorry, but you are not allowed to purchase this product, because you already "
-"have active subscription on this site."
+"Sorry, but you are not allowed to purchase this product, because you already have "
+"active subscription on this site."
 msgstr ""
 
 #: includes/classes/subscriptio-subscription-product.class.php:903
@@ -1282,26 +1261,27 @@ msgstr "L’abonnement n°%s est actif"
 
 #: includes/classes/subscriptio-subscription-product.class.php:957
 msgid ""
-"Sorry, but you can only purchase one instance of this product and you "
-"already added it to cart."
+"Sorry, but you can only purchase one instance of this product and you already added "
+"it to cart."
 msgstr ""
 
 #: includes/classes/subscriptio-subscription-product.class.php:1030
 msgid ""
-"Sorry, but you are not allowed to have trial period of this subscription "
-"product anymore. "
+"Sorry, but you are not allowed to have trial period of this subscription product "
+"anymore. "
 msgstr ""
 
 #: includes/classes/subscriptio-subscription-product.class.php:1034
-msgid ""
-"Sorry, but you are not allowed to have trial period on this site anymore. "
+msgid "Sorry, but you are not allowed to have trial period on this site anymore. "
 msgstr ""
 
 #: includes/classes/subscriptio-subscription-product.class.php:1037
 msgid ""
-"You will be charged with full price of subscription and it will be started "
-"without a trial period."
+"You will be charged with full price of subscription and it will be started without "
+"a trial period."
 msgstr ""
+"La totalité du prix d’abonnement vous sera facturé et il n'y aura pas de période "
+"d’essai."
 
 #: includes/classes/subscriptio-subscription.class.php:65
 msgid "pending"
@@ -1326,11 +1306,11 @@ msgstr "essai"
 
 #: includes/classes/subscriptio-subscription.class.php:86
 msgid "overdue"
-msgstr ""
+msgstr "en retard"
 
 #: includes/classes/subscriptio-subscription.class.php:89
 msgid "expired"
-msgstr ""
+msgstr "expiré"
 
 #: includes/classes/subscriptio-subscription.class.php:241
 #: includes/classes/subscriptio-subscription.class.php:331
@@ -1394,8 +1374,7 @@ msgstr ""
 
 #: includes/classes/subscriptio-subscription.class.php:1418
 msgid "Renewal order date should be before payment due."
-msgstr ""
-"La date de la facture de renouvellement doit précéder l’échéance de paiement."
+msgstr "La date de la facture de renouvellement doit précéder l’échéance de paiement."
 
 #: includes/classes/subscriptio-subscription.class.php:1426
 msgid "Renewal order date changed."
@@ -1415,8 +1394,7 @@ msgstr "Prochaine échéance modifiée."
 
 #: includes/classes/subscriptio-subscription.class.php:1492
 msgid "Payment Reminder date should be set before the next event."
-msgstr ""
-"La date de rappel de payement doit être située avant la prochaine action."
+msgstr "La date de rappel de payement doit être située avant la prochaine action."
 
 #: includes/classes/subscriptio-subscription.class.php:1500
 msgid "Payment Reminder date changed."
@@ -1492,8 +1470,8 @@ msgstr ""
 
 #: includes/classes/subscriptio-subscription.class.php:1887
 #: includes/views/backend/subscription/subscription-details.php:101
-#: subscriptio.php:731 subscriptio.php:800 subscriptio.php:811
-#: subscriptio.php:827 subscriptio.php:2353
+#: subscriptio.php:731 subscriptio.php:800 subscriptio.php:811 subscriptio.php:827
+#: subscriptio.php:2353
 msgid "deleted"
 msgstr "supprimé"
 
@@ -1697,8 +1675,8 @@ msgstr ""
 
 #: includes/subscriptio-plugin-settings.inc.php:37
 msgid ""
-"<p>If checked, will create one subscription with multiple products, if not - "
-"will create separate subscription for each product.</p>"
+"<p>If checked, will create one subscription with multiple products, if not - will "
+"create separate subscription for each product.</p>"
 msgstr ""
 
 #: includes/subscriptio-plugin-settings.inc.php:40
@@ -1805,8 +1783,8 @@ msgstr ""
 
 #: includes/subscriptio-plugin-settings.inc.php:159
 msgid ""
-"<p>How to display the price in variable/grouped subscription products (i.e. "
-"after \"From:\" text).</p>"
+"<p>How to display the price in variable/grouped subscription products (i.e. after "
+"\"From:\" text).</p>"
 msgstr ""
 
 #: includes/subscriptio-plugin-settings.inc.php:166
@@ -1891,9 +1869,9 @@ msgstr ""
 
 #: includes/views/backend/admin/url-mismatch-notification.php:20
 msgid ""
-"Your website URL has recently been changed. Automatic payments and customer "
-"emails have been disabled to prevent live transactions originating from "
-"development or staging servers."
+"Your website URL has recently been changed. Automatic payments and customer emails "
+"have been disabled to prevent live transactions originating from development or "
+"staging servers."
 msgstr ""
 
 #: includes/views/backend/admin/url-mismatch-notification.php:21
@@ -1993,17 +1971,17 @@ msgstr ""
 #: includes/views/backend/subscription/subscription-details.php:48
 #: templates/myaccount/view-subscription.php:34
 msgid "Overdue Since:"
-msgstr ""
+msgstr "En retard depuis:"
 
 #: includes/views/backend/subscription/subscription-details.php:55
 #: templates/myaccount/view-subscription.php:38
 msgid "Paused Since:"
-msgstr ""
+msgstr "En pause depuis:"
 
 #: includes/views/backend/subscription/subscription-details.php:62
 #: templates/myaccount/view-subscription.php:42
 msgid "Suspended Since:"
-msgstr ""
+msgstr "Suspendu depuis:"
 
 #: includes/views/backend/subscription/subscription-details.php:69
 #: templates/myaccount/view-subscription.php:46
@@ -2194,13 +2172,12 @@ msgstr "Aucun abonnement trouvé dans la corbeille"
 msgid "WooCommerce Subscriptions"
 msgstr "Gestion d'abonnements avec WooCommerce"
 
-#: subscriptio.php:417 subscriptio.php:419 subscriptio.php:420
-#: subscriptio.php:641 templates/myaccount/subscription-list.php:25
+#: subscriptio.php:417 subscriptio.php:419 subscriptio.php:420 subscriptio.php:641
+#: templates/myaccount/subscription-list.php:25
 msgid "Status"
 msgstr "Statut"
 
-#: subscriptio.php:442 subscriptio.php:448 subscriptio.php:454
-#: subscriptio.php:1262
+#: subscriptio.php:442 subscriptio.php:448 subscriptio.php:454 subscriptio.php:1262
 msgid "Transactions"
 msgstr ""
 
@@ -2240,13 +2217,11 @@ msgstr ""
 msgid "No Transactions Found In Trash"
 msgstr ""
 
-#: subscriptio.php:481 subscriptio.php:483 subscriptio.php:484
-#: subscriptio.php:675
+#: subscriptio.php:481 subscriptio.php:483 subscriptio.php:484 subscriptio.php:675
 msgid "Action"
 msgstr ""
 
-#: subscriptio.php:493 subscriptio.php:495 subscriptio.php:496
-#: subscriptio.php:676
+#: subscriptio.php:493 subscriptio.php:495 subscriptio.php:496 subscriptio.php:676
 msgid "Result"
 msgstr "Résultat"
 
@@ -2266,8 +2241,7 @@ msgstr ""
 msgid "ID"
 msgstr ""
 
-#: subscriptio.php:642 subscriptio.php:679
-#: templates/emails/email-order-items.php:17
+#: subscriptio.php:642 subscriptio.php:679 templates/emails/email-order-items.php:17
 #: templates/emails/email-subscription-items.php:17
 msgid "Product"
 msgstr "Abonnement"
@@ -2327,22 +2301,21 @@ msgstr ""
 
 #: subscriptio.php:1604
 msgid ""
-"Payment reminders, overdue period and suspensions are optional.<br>Not "
-"displayed in illustration are trial periods, expiration dates and "
-"subscription pausing and resuming capability."
+"Payment reminders, overdue period and suspensions are optional.<br>Not displayed in "
+"illustration are trial periods, expiration dates and subscription pausing and "
+"resuming capability."
 msgstr ""
-"Les rappels de paiement, période de retard et les suspensions sont "
-"facultatifs. <br> Ne sont pas affichés dans l'illustration les périodes "
-"essai, les dates d'expiration et la capacité de suspendre un abonnement."
+"Les rappels de paiement, période de retard et les suspensions sont facultatifs. "
+"<br> Ne sont pas affichés dans l'illustration les périodes essai, les dates "
+"d'expiration et la capacité de suspendre un abonnement."
 
 #: subscriptio.php:1712
 #, php-format
 msgid ""
-"You can enable/disable email notifications on the <a href=\"%s\">Emails</a> "
-"page."
+"You can enable/disable email notifications on the <a href=\"%s\">Emails</a> page."
 msgstr ""
-"Vous pouvez activer/désactiver les notifications par courriel sur la page <a "
-"href=\"%s\">Emails</a>."
+"Vous pouvez activer/désactiver les notifications par courriel sur la page <a href="
+"\"%s\">Emails</a>."
 
 #: subscriptio.php:1776
 msgid "Your settings have been saved."
@@ -2451,8 +2424,8 @@ msgstr "Abonnements"
 #: subscriptio.php:2991
 #, php-format
 msgid ""
-"<strong>Subscriptio</strong> requires WordPress version %s or later. Please "
-"update WordPress to use this plugin."
+"<strong>Subscriptio</strong> requires WordPress version %s or later. Please update "
+"WordPress to use this plugin."
 msgstr ""
 
 #: subscriptio.php:2991 subscriptio.php:3002 subscriptio.php:3013
@@ -2467,8 +2440,8 @@ msgstr ""
 #: subscriptio.php:3002
 #, php-format
 msgid ""
-"<strong>Subscriptio</strong> requires WooCommerce to be activate. You can "
-"download WooCommerce %s."
+"<strong>Subscriptio</strong> requires WooCommerce to be activate. You can download "
+"WooCommerce %s."
 msgstr ""
 
 #: subscriptio.php:3002
@@ -2478,8 +2451,8 @@ msgstr ""
 #: subscriptio.php:3013
 #, php-format
 msgid ""
-"<strong>Subscriptio</strong> requires WooCommerce version %s or later. "
-"Please update WooCommerce to use this plugin."
+"<strong>Subscriptio</strong> requires WooCommerce version %s or later. Please "
+"update WooCommerce to use this plugin."
 msgstr ""
 
 #: templates/emails/customer-subscription-cancelled.php:16
@@ -2490,11 +2463,9 @@ msgstr "Votre abonnement %s a été annulé."
 
 #: templates/emails/customer-subscription-cancelled.php:18
 #: templates/emails/plain/customer-subscription-cancelled.php:16
-msgid ""
-"Details of the cancelled subscription are shown below for your reference:"
+msgid "Details of the cancelled subscription are shown below for your reference:"
 msgstr ""
-"Les détails de votre abonnement résilié sont indiqués ci-dessous pour "
-"référence :"
+"Les détails de votre abonnement résilié sont indiqués ci-dessous pour référence :"
 
 #: templates/emails/customer-subscription-cancelled.php:22
 #: templates/emails/customer-subscription-expired.php:22
@@ -2513,11 +2484,11 @@ msgstr "Abonnement:"
 #: templates/emails/plain/customer-subscription-completed-order.php:14
 #, php-format
 msgid ""
-"Hi there. Your recent subscription renewal order on %s has been completed. "
-"Your order details are shown below for your reference:"
+"Hi there. Your recent subscription renewal order on %s has been completed. Your "
+"order details are shown below for your reference:"
 msgstr ""
-"Bonjour. Votre récente commande de renouvellement sur %s a été traitée. Les "
-"détails sont affichés ci-dessous à titre d’information:"
+"Bonjour. Votre récente commande de renouvellement sur %s a été traitée. Les détails "
+"sont affichés ci-dessous à titre d’information:"
 
 #: templates/emails/customer-subscription-completed-order.php:20
 #: templates/emails/customer-subscription-new-order.php:23
@@ -2554,14 +2525,11 @@ msgstr "Votre abonnement %s a expiré."
 #: templates/emails/plain/customer-subscription-expired.php:16
 msgid "Details of the expired subscription are shown below for your reference:"
 msgstr ""
-"Les détails de votre abonnement expiré sont indiqués ci-dessous pour "
-"référence :"
+"Les détails de votre abonnement expiré sont indiqués ci-dessous pour référence :"
 
 #: templates/emails/customer-subscription-new-order.php:16
-msgid ""
-"A new subscription renewal order has been generated and is pending payment."
-msgstr ""
-"Une nouvelle facture de renouvellement a été générée, paiement en attente."
+msgid "A new subscription renewal order has been generated and is pending payment."
+msgstr "Une nouvelle facture de renouvellement a été générée, paiement en attente."
 
 #: templates/emails/customer-subscription-new-order.php:18
 #: templates/emails/customer-subscription-payment-overdue.php:20
@@ -2593,7 +2561,7 @@ msgstr ""
 #: templates/emails/plain/customer-subscription-payment-overdue.php:14
 #, php-format
 msgid "Your recent subscription renewal order on %s is late for payment."
-msgstr ""
+msgstr "Le paiement pour le renouvellement de votre abonnement %s est en retard."
 
 #: templates/emails/customer-subscription-payment-overdue.php:18
 #: templates/emails/customer-subscription-payment-reminder.php:21
@@ -2601,8 +2569,7 @@ msgstr ""
 #: templates/emails/plain/customer-subscription-payment-reminder.php:20
 #, php-format
 msgid ""
-"If you do not pay it by <strong>%s</strong>, your %s will be <strong>%s</"
-"strong>."
+"If you do not pay it by <strong>%s</strong>, your %s will be <strong>%s</strong>."
 msgstr ""
 
 #: templates/emails/customer-subscription-payment-overdue.php:18
@@ -2622,33 +2589,32 @@ msgstr[1] ""
 #: templates/emails/plain/customer-subscription-payment-overdue.php:20
 #: templates/emails/plain/customer-subscription-payment-reminder.php:25
 msgid "Your order details are shown below for your reference:"
-msgstr ""
-"Les détails de votre commande sont indiqués ci-dessous pour information :"
+msgstr "Les détails de votre commande sont indiqués ci-dessous pour information :"
 
 #: templates/emails/customer-subscription-payment-reminder.php:16
 #: templates/emails/plain/customer-subscription-payment-reminder.php:14
 #, php-format
 msgid "Your recent subscription renewal order on %s is due for payment."
-msgstr ""
+msgstr "Le renouvellement de votre abonnement %s arrive à sa date d'échéance."
 
 #: templates/emails/customer-subscription-payment-reminder.php:19
 #: templates/emails/plain/customer-subscription-payment-reminder.php:17
 #, php-format
 msgid ""
-"If you do not pay it by <strong>%s</strong>, your %s will be <strong>%s</"
-"strong> and will be subject to %s."
+"If you do not pay it by <strong>%s</strong>, your %s will be <strong>%s</strong> "
+"and will be subject to %s."
 msgstr ""
-"Veuillez effectuer votre payement avant le <strong>%s</strong>, sans quoi "
-"votre %s sera <strong>%s</strong> et fera l'objet de %s."
+"Veuillez effectuer votre payement avant le <strong>%s</strong>, sans quoi votre %s "
+"sera <strong>%s</strong> et fera l'objet de %s."
 
 #: templates/emails/customer-subscription-processing-order.php:16
 #: templates/emails/plain/customer-subscription-processing-order.php:14
 msgid ""
-"Your subscription renewal order is now being processed. Your order details "
-"are shown below for your reference:"
+"Your subscription renewal order is now being processed. Your order details are "
+"shown below for your reference:"
 msgstr ""
-"Votre renouvellement d’abonnement est en traitement. Les détails de votre "
-"commande figurent ci-dessous pour information :"
+"Votre renouvellement d’abonnement est en traitement. Les détails de votre commande "
+"figurent ci-dessous pour information :"
 
 #: templates/emails/customer-subscription-resumed.php:16
 #: templates/emails/plain/customer-subscription-resumed.php:14
@@ -2659,8 +2625,7 @@ msgstr "Votre abonnement %s a été réactivé."
 #: templates/emails/customer-subscription-resumed.php:18
 #: templates/emails/plain/customer-subscription-resumed.php:16
 msgid "Details of the resumed subscription are shown below for your reference:"
-msgstr ""
-"Le détail de l’abonnement réactivé figure ci-dessous à titre d’information :"
+msgstr "Le détail de l’abonnement réactivé figure ci-dessous à titre d’information :"
 
 #: templates/emails/customer-subscription-suspended.php:16
 #: templates/emails/plain/customer-subscription-suspended.php:14
@@ -2671,24 +2636,21 @@ msgstr "Votre abonnement sur %s a été suspendu."
 #: templates/emails/customer-subscription-suspended.php:18
 #, php-format
 msgid ""
-"If you do not pay for the order by <strong>%s</strong>, your %s will be "
-"<strong>%s</strong>."
+"If you do not pay for the order by <strong>%s</strong>, your %s will be <strong>%s</"
+"strong>."
 msgstr ""
 
 #: templates/emails/customer-subscription-suspended.php:20
 #, php-format
 msgid "To avoid this please use the following link to pay: %s"
 msgstr ""
-"Pour éviter cela, veuillez utiliser le lien suivant pour effectuer le "
-"paiement : %s"
+"Pour éviter cela, veuillez utiliser le lien suivant pour effectuer le paiement : %s"
 
 #: templates/emails/customer-subscription-suspended.php:22
 #: templates/emails/plain/customer-subscription-suspended.php:16
-msgid ""
-"Details of the suspended subscription are shown below for your reference:"
+msgid "Details of the suspended subscription are shown below for your reference:"
 msgstr ""
-"Les détails de votre abonnement suspendu figurent ci-dessous à titre "
-"d’information :"
+"Les détails de votre abonnement suspendu figurent ci-dessous à titre d’information :"
 
 #: templates/emails/email-customer-details.php:18
 #: templates/emails/plain/email-customer-details.php:17
@@ -2711,12 +2673,12 @@ msgstr "Total récurrent"
 #: templates/emails/plain/customer-subscription-new-order.php:14
 #, php-format
 msgid ""
-"A new subscription renewal order has been generated and is pending payment. "
-"To pay for this order please use the following link: %s"
+"A new subscription renewal order has been generated and is pending payment. To pay "
+"for this order please use the following link: %s"
 msgstr ""
-"Une nouvelle commande de renouvellement de l’abonnement a été générée et est "
-"en attente de paiement. Pour payer cet ordre s’il vous plaît utilisez le "
-"lien suivant:%s"
+"Une nouvelle commande de renouvellement de l’abonnement a été générée et est en "
+"attente de paiement. Pour payer cet ordre s’il vous plaît utilisez le lien suivant:"
+"%s"
 
 #: templates/emails/plain/customer-subscription-new-order.php:20
 #, php-format
@@ -2833,38 +2795,37 @@ msgstr "Vous n’avez aucun abonnement."
 #: templates/myaccount/view-subscription.php:19
 #, php-format
 msgid ""
-"Subscription <mark class=\"subscriptio_subscription_info_number\">%s</mark> "
-"is pending first payment."
+"Subscription <mark class=\"subscriptio_subscription_info_number\">%s</mark> is "
+"pending first payment."
 msgstr ""
-"L’abonnement <mark class=\"subscriptio_subscription_info_number\">%s</mark> "
-"est en attente du premier paiement."
+"L’abonnement <mark class=\"subscriptio_subscription_info_number\">%s</mark> est en "
+"attente du premier paiement."
 
 #: templates/myaccount/view-subscription.php:21
 #, php-format
 msgid ""
-"Subscription <mark class=\"subscriptio_subscription_info_number\">%s</mark> "
-"was started on <mark class=\"subscriptio_subscription_info_start\">%s</mark> "
-"and is currently <mark class=\"subscriptio_subscription_info_status\">%s</"
-"mark>%s."
+"Subscription <mark class=\"subscriptio_subscription_info_number\">%s</mark> was "
+"started on <mark class=\"subscriptio_subscription_info_start\">%s</mark> and is "
+"currently <mark class=\"subscriptio_subscription_info_status\">%s</mark>%s."
 msgstr ""
-"L’abonnement <mark class=“subscriptio_subscription_info_number”>%s</mark> a "
-"démarré le <mark class=“subscriptio_subscription_info_start”>%s</mark>. "
-"Statut : <mark class=“subscriptio_subscription_info_status”>%s</mark>%s."
+"L’abonnement <mark class=“subscriptio_subscription_info_number”>%s</mark> a démarré "
+"le <mark class=“subscriptio_subscription_info_start”>%s</mark>. Statut : <mark "
+"class=“subscriptio_subscription_info_status”>%s</mark>%s."
 
 #: templates/myaccount/view-subscription.php:23
 #, php-format
 msgid ""
-"Subscription <mark class=\"subscriptio_subscription_info_number\">%s</mark> "
-"has been <mark class=\"subscriptio_subscription_info_status\">%s</mark>."
+"Subscription <mark class=\"subscriptio_subscription_info_number\">%s</mark> has "
+"been <mark class=\"subscriptio_subscription_info_status\">%s</mark>."
 msgstr ""
-"L’abonnement <mark class=\"subscriptio_subscription_info_number\">%s</mark> "
-"a été <mark class=\"subscriptio_subscription_info_status\">%s</mark>."
+"L’abonnement <mark class=\"subscriptio_subscription_info_number\">%s</mark> a été "
+"<mark class=\"subscriptio_subscription_info_status\">%s</mark>."
 
 #: templates/myaccount/view-subscription.php:25
 #, php-format
 msgid ""
-"Subscription <mark class=\"subscriptio_subscription_info_number\">%s</mark> "
-"has <mark class=\"subscriptio_subscription_info_status\">%s</mark>."
+"Subscription <mark class=\"subscriptio_subscription_info_number\">%s</mark> has "
+"<mark class=\"subscriptio_subscription_info_status\">%s</mark>."
 msgstr ""
 
 #: templates/myaccount/view-subscription.php:53
