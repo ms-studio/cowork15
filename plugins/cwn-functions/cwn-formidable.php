@@ -35,6 +35,23 @@ function cowork_limit_my_date_field($field_id){
   }
 
 }
-// 
+
+
+// Fix translation for Formidable 
+// See https://formidableforms.com/help-desk/wp-org-translation-is-overriding-bundled-pro-translation/
+
+add_filter( 'load_textdomain_mofile', 'better_formidable_translation', 10, 2 );
+
+function better_formidable_translation( $mofile, $domain ) {
+
+  if ( 'formidable' === $domain ) {
+
+    $mofile = WP_PLUGIN_DIR . '/formidable/languages/formidable-' . get_locale() . '.mo';
+
+  }
+
+  return $mofile;
+
+}
 
 
