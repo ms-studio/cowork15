@@ -155,3 +155,61 @@ table.frmcal-calendar .frmcal-today .frmcal_date {
 }
 
 /* @end */
+
+/* @group Modifier Donnees */
+
+.form_modif_donnees > div {
+	border:  1px solid #999;
+	border-radius: 0.3em;
+	margin: 0 0 1em 0;
+	padding: 1em;
+	background: #fff;
+	font-family: "camingodos-web", "Arial Bold", Helvetica, sans-serif;
+}
+
+.form_modif_donnees > div > div > p {
+	display: inline;
+}
+
+.form_modif_buttons {
+	display: flex;
+	margin-top: 0.5em;
+}
+
+.frm_edit_link_container {
+	display: inherit;
+}
+
+
+.form_modif_donnees .frm_style_formidable-style.with_frm_style input[type=submit],
+.form_modif_donnees .frm_style_formidable-style.with_frm_style  input[type=submit]:hover,
+.form_modif_donnees .frm_edit_link,
+.form_modif_donnees .frm_delete_link {
+	padding: 6px 12px;
+  background-color: #8f8f8f;
+  border: 0;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  margin-right: 0.5em;
+  border-radius: 0.3em;
+  font-size: 100%;
+}
+
+.form_modif_donnees .frm_style_formidable-style.with_frm_style input[type=submit] {
+	background-color: #09a50f;
+}
+
+.form_modif_donnees .frm_delete_link  {
+	background-color: #e74f4e;
+}
+
+.form_modif_donnees .frm_style_formidable-style.with_frm_style  input[type=submit]:hover,
+.form_modif_donnees .frm_edit_link:hover,
+.form_modif_donnees .frm_delete_link:hover {
+	background-color: #000;
+}
+
+
+
+/* @end */
