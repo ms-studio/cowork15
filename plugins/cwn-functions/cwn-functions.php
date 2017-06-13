@@ -32,3 +32,6 @@ include_once (plugin_dir_path(__FILE__).'cwn-formidable.php');
 
 // WooCommerce
 include_once (plugin_dir_path(__FILE__).'cwn-woocommerce.php');
+
+// Linkedin Analytics
+include_once (plugin_dir_path(__FILE__).'cwn-analytics.php');
