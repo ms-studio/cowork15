@@ -94,3 +94,27 @@ function bcf_get_attachment_link_filter( $content, $post_id, $size, $permalink )
 add_filter('wp_get_attachment_link', 'bcf_get_attachment_link_filter', 10, 4);
 
 
+
+/*
+ * Admin Area Improvements
+*/
+
+add_action('admin_head', 'cwrk_admin_css');
+
+function cwrk_admin_css() {
+  echo '<style>
+  
+    /* hide annoying notices */
+    
+    #wysija-app .notice-msg {
+    	display: none;
+    }
+    
+    /* do not show plugin updates here */
+    
+    #adminmenu #toplevel_page_wysija_campaigns span.update-plugins {
+    	display: none;
+    }
+    
+  </style>';
+}
