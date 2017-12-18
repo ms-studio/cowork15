@@ -133,11 +133,15 @@ and (min-width: 1020px) {
 		}
 		
 		.hero .post-358 {
-			width: 30%;
-			margin-left: 10%;
+			/* width: 30%; */
+			/* margin-left: 10%; */
 		}
-		
-		body.hero-image .hero.with-featured-image, 
+		.deux-colonnes {
+		column-count: 2;
+		}
+	}
+	
+	body.hero-image .hero.with-featured-image, 
 		body[class*="front-page"] .hero {
 		    padding-bottom: 94px;
 		    padding-top: 204px !important;
