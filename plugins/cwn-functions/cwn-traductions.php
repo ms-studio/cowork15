@@ -17,7 +17,7 @@ function load_custom_plugin_translation_file( $mofile, $domain ) {
 	$file = '-' . get_locale() . '.mo';
 	
 	$plugins = array(
-		'woocommerce',
+		// 'woocommerce',
 		'subscriptio',
 		'woocommerce-membership'
 	);
