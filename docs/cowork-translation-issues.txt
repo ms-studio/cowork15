@@ -1,0 +1,12 @@
+The order #1704 from Anne-Marie Van Rampaey has been cancelled. The order was as follows:
+
+ce string est dans WooCommerce:
+
+The order #%d from %s has been cancelled. The order was as follows:
+
+
+
+***
+
+https://lelivrefaire.com/wp/wp-admin/admin.php?page=jetpack#/traffic
+

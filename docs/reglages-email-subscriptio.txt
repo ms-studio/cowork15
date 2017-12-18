@@ -1,0 +1,112 @@
+
+***
+
+Etat actuel: 
+
+quand une commande est approuvée (payement reçu):
+
+3 mails sont envoyés:
+
+1. Membership granted (par plugin Memberships)
+2. "Votre commande de renouvellement d’abonnement a été traitée" (par plugin Subscriptio)
+3. Votre commande est terminée (par WooCommerce) - avec facture PDF
+
+Options:
+- Désactiver 1 et 2, et ne garder que trois.
+- Désactiver le plugin Memberships.
+
+Réglages email WooCommerce:
+- WooCommerce > Paramètres > E-mails
+C'est là qu'on règle tous les e-mails, aussi pour Abonnements et Membership.
+
+***
+
+Les emails de subscriptio:
+
+1. Nouvel abonnement = subscription_new_order = DÉSACTIVÉ
+2. Processing order = ?
+3. Abonnement finalisé = completed_order = DÉSACTIVÉ
+4. payment reminder 
+5. payment overdue 
+6. Subscription paused
+7. Subscription resumed
+8. Subscription suspended
+9. Subscription cancelled = Abonnement annulé 
+10. Subscription expired = Abonnement expiré 
+ 
+***
+
+Statut/Rôle WooCommerce: Customer
+
+***
+
+Pages crées par WooCommerce: 
+
+- Cart > Panier
+- Shop > Boutique  > abonnements
+- My Account my-account > mon-compte
+
+- panier: https://coworking-neuchatel.ch/panier/
+- shop: https://coworking-neuchatel.ch/abonnements/
+- mon compte: https://coworking-neuchatel.ch/mon-compte/
+
+***
+
+http://codecanyon.net/item/subscriptio-woocommerce-subscriptions/8754068/comments?page=48&filter=all#comment_12550536
+
+- Hi there – just wanting to know if you can synchronize the subscription renewal date? For example, my client wants subscriptions to renew on 01 April and 01 October every year, regardless of when the person made their order
+
+- Yes, that is possible with our plugin. However, you will have to modify each subscription manually. It has an option to change the next payment and renewal dates.
+
+***
+
+Texte à changer:
+quand le payement a été reçu:
+
+sujet du mail: Votre commande du 8 mars 2016 sur Coworking Neuchâtel est complète
+Titre: 
+Votre commande est terminée
+Texte:
+Bonjour. Votre commande récente sur Coworking Neuchâtel a été expédiée. Le récapitulatif de votre commande est affiché ci-dessous :
+
+
+dans le code: 
+
+#: includes/emails/class-wc-email-customer-completed-order.php:33
+msgid "Your {site_title} order from {order_date} is complete"
+msgstr "Votre commande du {order_date} sur {site_title} est complète"
+
+#: includes/emails/class-wc-email-customer-completed-order.php:32
+msgid "Your order is complete"
+msgstr "Votre commande est terminée"
+
+#: templates/emails/customer-completed-order.php:27
+#: templates/emails/plain/customer-completed-order.php:24
+msgid "Hi there. Your recent order on %s has been completed. Your order details are shown below for your reference:"
+msgstr "Bonjour. Votre commande récente sur %s a été expédiée. Le récapitulatif de votre commande est affiché ci-dessous&nbsp;:"
+
+
+***
+
+1) Confirmation de reception de votre commande du 3 décembre 2015
+
+
+#: includes/emails/class-wc-email-customer-processing-order.php:31
+msgid "Your {site_title} order receipt from {order_date}"
+msgstr "Reçu de votre commande du {order_date} sur {site_title}"
+
+#: includes/emails/class-wc-email-customer-processing-order.php:30
+msgid "Thank you for your order"
+msgstr "Merci pour votre commande"
+
+#: templates/emails/customer-processing-order.php:27
+#: templates/emails/plain/customer-processing-order.php:24
+msgid "Your order has been received and is now being processed. Your order details are shown below for your reference:"
+msgstr "Votre commande a été reçue et est maintenant en cours de traitement. Les détails de votre commande sont affichés ci-dessous&nbsp;: "
+
+
+***
+
+
+
+

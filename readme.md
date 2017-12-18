@@ -2,7 +2,7 @@
 
 WordPress theme and functionality plugin for [Coworking Neuchâtel](https://coworking-neuchatel.ch).
 
-## components
+## components
 
 * [WordPress](http://wordpress.org/)
 * Base theme: [Goran](https://wordpress.org/themes/goran/)

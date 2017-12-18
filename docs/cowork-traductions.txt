@@ -1,0 +1,35 @@
+Traductions WooCommerce manquantes:
+
+titre du mail:
+Payment for subscription renewal order 1555 has not been received
+
+FR:
+Le paiement pour la facture de renouvellement {order_number} n’a pas été reçu
+
+dans le mail (Header):
+Subscription payment reminder
+
+Note: 
+
+ce sont des strings de Subscriptio, dans:
+subscriptio/includes/classes/emails/subscriptio-email-customer-subscription-payment-reminder.class.php
+
+Cela se règle aussi dans l'interface: 
+WooCommerce > Réglages > E-mails > 
+
+
+Paiement de l’abonnement en retard
+= Les emails pour les paiements en retard sont envoyées aux clients qui n'ont pas payé avant la date d’échéance.
+Objet: Retard de paiement pour votre abonnement {order_number}
+
+Rappel de paiement pour l’abonnement
+= Les emails de rappel de paiement sont envoyées aux clients à des intervalles prédéfinis lorsqu'ils ont des paiements d'abonnement qui ne sont pas encore réglés.
++ Envoyer une copie de cet email à l’administrateur
+
+***
+
+Your recent subscription renewal order on Coworking Neuchâtel is due for payment.
+
+Veuillez effectuer votre payement avant le 15 mars 2017 10 h 26 min, sans quoi votre abonnement sera marqué comme en retard et fera l'objet de résiliation.
+
+***
