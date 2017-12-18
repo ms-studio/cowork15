@@ -81,14 +81,17 @@
 			</div>
 			
 			<?php 
-				} // end if $cwrk_sites defined
+				} else {
+					
+					// default for connected users:
+					echo '<div class="header-member-menu">';
+					cowork_generate_menu('membres_neuch');
+					echo '</div>';
+				
+				}// end if $cwrk_sites defined
 			} // end if-fuction exists
 		} // end testing if logged in 
-		
-//		$variable = get_field('field_name', 'user_1');
-//		
-//		// do something with $variable
-		
+				
 		 ?>
 	
 		<?php
@@ -120,33 +123,5 @@
 		<?php endif; ?>
 	</header><!-- #masthead -->
 	
-	<?php 
-	
-	// some testing and debugging... admin only 
-	
-	if( current_user_can('administrator')) {  
-		
-		// try to get entries 
-		// clé de formulaire: 8m091w2
-		// clé du champ: event-date2 - ID: 145
-		
-		// date format of Formidable: 12/03/2015
-		
-		// echo '<p>time() selon ce serveur: '.time().'</p>';
-		// echo '<p>'.FrmProDisplaysController::get_shortcode(array('id' => 993)).'</p>';
-		
-	// 	echo FrmProEntriesController::get_form_results(array('id' => '8m091w2'));
-//		echo '[tomorrow] shortcode produces: ' ;
-//		echo do_shortcode('[tomorrow]');
-		// echo FrmProDisplaysController::get_shortcode(array('id' => 993));
-		
-//		echo FrmProEntriesController::get_field_value_shortcode(array(
-//		'field_id' => x, 
-//		'entry' => $entry_id)
-//		);
-		
-	}
-	
-	 ?>
 
 	<div id="content" class="site-content">
