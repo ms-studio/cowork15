@@ -23,6 +23,10 @@ get_header(); ?>
 						
 							get_template_part( 'content', 'cwn_book' );
 						
+						} else if ( 'wysijap' === get_post_type() ) {
+						
+							get_template_part( 'content', 'wysijap' );
+						
 						} else {
 						
 							get_template_part( 'content', 'single' );
