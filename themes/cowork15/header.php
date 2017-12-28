@@ -34,67 +34,15 @@
 		
 		if ( is_user_logged_in() ) {
 		
-			if ( function_exists( 'get_field' ) ) {
-			
-				$user_ID = get_current_user_id();
-				$cwrk_sites = get_field('cowork_site', 'user_'.$user_ID);
-				
-				if ( !empty( $cwrk_sites ) ) {
+			// default for connected users:
+			echo '<div class="header-member-menu">';
+			cowork_generate_menu('membres_neuch');
+			echo '</div>';
 		
-			?>
-							<div class="header-member-menu">
-							<?php 
-							// note: if one site = string
-							// if two elements = array
-							
-							if ( is_array($cwrk_sites) ) {
-							
-								// if array has 2 items -> global_menu
-								if ( count($cwrk_sites) == 2 ) {
-									cowork_generate_menu('membres_global');
-								} else {
-								
-									// go through array $cwrk_sites
-									foreach ($cwrk_sites as $key => $site) {
-										if ( $site == 'Neuchâtel') {
-											cowork_generate_menu('membres_neuch');
-										}
-										if ( $site == 'La Chaux-de-Fonds') {
-											cowork_generate_menu('membres_tchaux');
-										} 
-									} // end foreach
-								
-								} // end count test
-								
-							} else if ( is_string($cwrk_sites) ) {
-								
-								// test if Neuchatel or Chaux de Fonds
-								if ($cwrk_sites == 'Neuchâtel') {
-									cowork_generate_menu('membres_neuch');
-								} else if ($cwrk_sites == 'La Chaux-de-Fonds') {
-									cowork_generate_menu('membres_tchaux');
-								}
-								
-							} // end testing array vs string
 			
-			 ?>
-			</div>
-			
-			<?php 
-				} else {
-					
-					// default for connected users:
-					echo '<div class="header-member-menu">';
-					cowork_generate_menu('membres_neuch');
-					echo '</div>';
-				
-				}// end if $cwrk_sites defined
-			} // end if-fuction exists
 		} // end testing if logged in 
 				
-		 ?>
 	
-		<?php
 			$top_area_content = get_theme_mod( 'cowork_top_area_content' );
 			if ( '' != $top_area_content ) :
 		?>
