@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Réservation Salles
+# Réservation des salles
 
 Le système de réservation de salle de réunion fonctionne avec l'extension Formidable, et la vue "agenda".
 
@@ -19,7 +19,7 @@ https://coworking-neuchatel.ch/modifier-vos-reservations/
 
 ***
 
-Lien vers ces pages (Navigation Membres):
+## Lien vers ces pages (Navigation Membres):
 
 Le lien figure dans un menu visible uniquement pour les membres du coworking.
 
@@ -34,9 +34,9 @@ Historiquement:
 * le menu 'membres_tchaux' pour utilisateurs CdF.
 * le menu 'membres_global' pour utilisateurs des deux sites.
 
-Changement décembre 2017: temporairement, pour simplifier, on affiche le menu 'membres_neuch' pour tous membres du site.
+Changement décembre 2017: temporairement, pour simplifier, on affiche le menu 'membres_neuch' pour tous membres du site. Voir [issue #4](https://github.com/ms-studio/cowork15/issues/4).
 
-Code sample: 
+Code historique: 
 
 ```
 if ( function_exists( 'get_field' ) ) {
