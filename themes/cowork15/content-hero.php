@@ -44,16 +44,14 @@
 			?>
 			<div class="entry-content">
 				<?php the_content(); ?>
-				<?php
-					wp_link_pages( array(
-						'before'      => '<div class="page-links">' . __( 'Pages:', 'edin' ),
-						'after'       => '</div>',
-						'link_before' => '<span>',
-						'link_after'  => '</span>',
-					) );
-				?>
 			</div><!-- .entry-content -->
-			<?php edit_post_link( __( 'Edit', 'edin' ), '<footer class="entry-footer"><span class="edit-link">', '</span></footer>' ); ?>
+			
+			<?php if ( is_active_sidebar( 'frontpage_gallery' ) ): ?>
+			 <div id="frontpage-gallery" class="frontpage-gallery">
+			 <?php dynamic_sidebar( 'frontpage_gallery' ) ?>
+			 </div>
+			<?php endif; ?>
+			
 		</article><!-- #post-## -->
 
 	<?php else : ?>

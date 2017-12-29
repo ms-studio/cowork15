@@ -10,8 +10,6 @@ function my_child_theme_setup() {
     
     register_nav_menus( array(
     	'membres_neuch'   => __( 'Membres Neuchâtel', 'cowork' ),
-    	'membres_tchaux' => __( 'Membres CdF', 'cowork' ),
-    	'membres_global'   => __( 'Membres Global', 'cowork' ),
     ) );
    
 }
@@ -25,14 +23,27 @@ if ( ! function_exists( 'cowork_register_sidebar' ) ) :
 	 * Register the sidebars
 	 */
 	function cowork_register_sidebar() {
+		
+		// Espace Sponsors
+//		register_sidebar( array(
+//			'name'=> __( 'Powered By', 'cowork' ),
+//			'id' => 'powered_sidebar',
+//			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+//			'after_widget' => '</aside>',
+//			'before_title' => '<h3 class="widgettitle">',
+//			'after_title' => '</h3>'
+//		) );	
+		
+		// Hero pour Front Page
 		register_sidebar( array(
-			'name'=> __( 'Powered By', 'cowork' ),
-			'id' => 'powered_sidebar',
+			'name'=> __( 'FrontPage Gallery', 'cowork' ),
+			'id' => 'frontpage_gallery',
 			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 			'after_widget' => '</aside>',
 			'before_title' => '<h3 class="widgettitle">',
 			'after_title' => '</h3>'
-		) );		
+		) );
+			
 	}
 
 endif; // cowork_register_sidebar

@@ -133,11 +133,27 @@ and (min-width: 1020px) {
 		}
 		
 		.hero .post-358 {
-			/* width: 30%; */
-			/* margin-left: 10%; */
+			display: flex;
+			justify-content: center;
 		}
-		.deux-colonnes {
-		column-count: 2;
+	
+		.hero .post-358 .entry-content {
+			 width: 40%; 
+			 margin-left: 0%; 
+			 margin-right: 5%; 
+		}
+		
+		.frontpage-gallery {
+			width: 50%;
+		}
+		
+		.frontpage-gallery .widget {
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+	
+	.deux-colonnes {
+		/*column-count: 2;*/
 		}
 	}
 	
