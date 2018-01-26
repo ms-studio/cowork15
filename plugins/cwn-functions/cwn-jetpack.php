@@ -87,8 +87,17 @@ add_filter( 'jetpack_get_available_modules', 'prefix_kill_all_the_jetpacks' );
  add_action( 'admin_menu', 'ap_remove_jetpack_page', 999 );
  
  /* Remove Publicize Support for WooCommerce products */
-
 add_action( 'init', 'my_remove_post_type_support', 10 );
 function my_remove_post_type_support() {
     remove_post_type_support( 'product', 'publicize' );
 }
+
+/*
+ * Hide Jetpack Testimonials in admin area
+*/
+add_action( 'admin_init', 'cowork_remove_jptestimonials' );
+
+function cowork_remove_jptestimonials() {
+    remove_menu_page( 'edit.php?post_type=jetpack-testimonial' );
+}
+
