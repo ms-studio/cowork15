@@ -42,15 +42,27 @@
 					the_title( '<header class="entry-header"><h1 class="page-title">', '</h1></header>' );
 				}
 			?>
-			<div class="entry-content">
+			<section class="entry-content">
 				<?php the_content(); ?>
-			</div><!-- .entry-content -->
+			</section><!-- .entry-content -->
 			
-			<?php if ( is_active_sidebar( 'frontpage_gallery' ) ): ?>
-			 <div id="frontpage-gallery" class="frontpage-gallery">
-			 <?php dynamic_sidebar( 'frontpage_gallery' ) ?>
-			 </div>
-			<?php endif; ?>
+			
+			<section class="frontpage-iframe-gallery">
+			
+				<div class="frontpage-iframe">
+					<iframe class="iframe-panorama" src="https://my.matterport.com/show/?m=q8s4parhqRb&lang=fr"></iframe>
+				</div>
+				
+				<?php if ( is_active_sidebar( 'frontpage_gallery' ) ): ?>
+				 <div id="frontpage-gallery" class="frontpage-gallery">
+				 
+				 
+				 
+				 <?php dynamic_sidebar( 'frontpage_gallery' ) ?>
+				 </div>
+				<?php endif; ?>
+				
+			</section>
 			
 		</article><!-- #post-## -->
 

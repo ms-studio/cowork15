@@ -189,8 +189,31 @@ h1.site-title a {
 	margin: 0 auto;
 }
 
+.frontpage-iframe {
+	padding-bottom: 56.4%;
+	position: relative;
+}
+
+.iframe-panorama {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+
 .frontpage-gallery .widget {
 	border-top: 0;
+	padding: 0;
+	margin-bottom: 1em;
+}
+
+.frontpage-gallery {
+	column-count: 2;
+	margin-top: 2em;
+}
+
+.frontpage-gallery img {
+	width: 100%;
+	height: auto;
 }
 
 .front-item {
@@ -619,14 +642,7 @@ body.logged-in #menu-item-931 {
 .list-testimonials .entry-content p {
   font-size: 1.125em;
 }
-.list-testimonials .entry-content p:first-child:before {
-  content: "“";
-  margin-left: -1.2rem;
-}
-.list-testimonials .entry-content p:last-child:after {
-  content: "”";
-  text-align: right;
-}
+
 .list-testimonials .entry-content p:first-child:before,
 .list-testimonials .entry-content p:last-child:after {
   color: #b2b2b2;
@@ -636,6 +652,17 @@ body.logged-in #menu-item-931 {
   top: .3em;
   width: 1.2rem;
 }
+
+.list-testimonials .entry-content p:first-child:before {
+  content: "“";
+  margin-left: -1.2rem;
+}
+.list-testimonials .entry-content p:last-child:after {
+  content: "”";
+  text-align: right;
+  line-height: 0.1;
+}
+
 
 .list-testimonials .entry-meta {
   border: 0;
