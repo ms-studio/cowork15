@@ -6,7 +6,7 @@
  *
  */
 
-// Change-Detector-XXXX - for Espresso.app
+// Change-Detector-XXXXXXXXXX - for Espresso.app
 
 /**
  * Set the content width based on the theme's design and stylesheet.
@@ -247,7 +247,7 @@ if ( $host != 'coworking-neuchatel.ch' ) {
  		// PROD: the MAIN stylesheet - combined and minified
  		wp_enqueue_style( 
  				'cowork-style', 
- 				get_stylesheet_directory_uri() . '/css/build/styles.20180126221120.css', // main.css
+ 				get_stylesheet_directory_uri() . '/css/build/styles.20180126225144.css', // main.css
  				false, // dependencies
  				null // version
  		); 

@@ -143,6 +143,11 @@ and (min-width: 1020px) {
 			 margin-right: 5%; 
 		}
 		
+		.page-template-front-page .hero .entry-content,
+		.page-template-front-page-cdf .hero .entry-content {
+			margin-bottom: 0;
+		}
+		
 		.frontpage-gallery {
 /*			width: 50%;*/
 /*			column-count: 1;*/
@@ -155,13 +160,13 @@ and (min-width: 1020px) {
 	
 	.deux-colonnes {
 		/*column-count: 2;*/
-		}
 	}
 	
 	body.hero-image .hero.with-featured-image, 
 		body[class*="front-page"] .hero {
 		    padding-bottom: 94px;
-		    padding-top: 204px !important;
+		    padding-top: 204px !important; 
+				/* override JS, can be 300+ px */
 		}
 		
 		.iframe-container {
