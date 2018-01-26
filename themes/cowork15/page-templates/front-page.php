@@ -55,6 +55,7 @@ get_header(); ?>
 			$custom_query = new WP_Query( array(
 						'posts_per_page' => 1,
 						'page_id' => 382,
+						'post_status' => 'publish',
 				) ); 
 				
 				if ($custom_query->have_posts()) : 
@@ -94,6 +95,7 @@ get_header(); ?>
 				$custom_query = new WP_Query( array(
 							'posts_per_page' => 1,
 							'page_id' => 1287,
+							'post_status' => 'publish',
 					) ); 
 					
 					if ($custom_query->have_posts()) : 
