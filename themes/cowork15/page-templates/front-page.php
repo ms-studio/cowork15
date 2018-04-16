@@ -17,11 +17,12 @@ get_header(); ?>
 	
 	<?php
 	
-	// PRESTATIONS
+	// Bloc 1: Prestations
 	
 	$custom_query = new WP_Query( array(
-				'posts_per_page' => 1,
-				'page_id' => 380, // = Prestations
+				'post_type' => 'cwn_bloc',
+				'page_id' => 2048, // = Prestations
+				'post_status' => array( 'publish' )
 		) ); 
 		
 		if ($custom_query->have_posts()) : 
@@ -50,12 +51,12 @@ get_header(); ?>
 		wp_reset_postdata();
 		
 		
-		// TARIFS
+		// Bloc 2: TARIFS
 			
 			$custom_query = new WP_Query( array(
-						'posts_per_page' => 1,
-						'page_id' => 382,
-						'post_status' => 'publish',
+						'post_type' => 'cwn_bloc',
+						'page_id' => 2046,
+						'post_status' => array( 'publish' )
 				) ); 
 				
 				if ($custom_query->have_posts()) : 
@@ -90,12 +91,12 @@ get_header(); ?>
 				wp_reset_postdata();
 	
 	
-			// ADD-ONS
+			// Bloc 3: EXTENSIONS
 			
 				$custom_query = new WP_Query( array(
-							'posts_per_page' => 1,
-							'page_id' => 1287,
-							'post_status' => 'publish',
+							'post_type' => 'cwn_bloc',
+							'page_id' => 2047,
+							'post_status' => array( 'publish' )
 					) ); 
 					
 					if ($custom_query->have_posts()) : 

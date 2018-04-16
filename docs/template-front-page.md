@@ -10,7 +10,7 @@ C'est dans content-hero.php qu'est intégré la [zone de widgets](https://cowork
 
 Ensuite, le template front-page.php contient les sections suivantes:
 
-* **Prestations** (fait appel à la page par son ID, 380)
-* **Tarifs** (fait appel à la page par son ID, 382)
-* **Add-Ons** (page ID 1287)
-* **Témoignages** (3 contenus aléatoires parmi les "testimonials").
+1. **Bloc 1: Prestations** - fait appel à la page par son ID, [2048](https://coworking-neuchatel.ch/wp-admin/post.php?post=2048&action=edit).
+2. **Bloc 2: Tarifs** - page ID [2046](https://coworking-neuchatel.ch/wp-admin/post.php?post=2046&action=edit).
+3. **Bloc 3: Extensions** - page ID [2047](https://coworking-neuchatel.ch/wp-admin/post.php?post=2047&action=edit).
+4. **Témoignages** (3 contenus aléatoires parmi les "testimonials").

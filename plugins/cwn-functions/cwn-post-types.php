@@ -1,13 +1,49 @@
 <?php
 
-/* Custom taxonomies
- ********************
+/* Custom Post Types and Taxonomies
+ ***********************************
  * http://codex.wordpress.org/Function_Reference/register_taxonomy
  * http://codex.wordpress.org/Function_Reference/register_post_type
 */
 
 // Register Custom Post Type
-function custom_post_type() {
+function cwn_custom_post_type() {
+	
+	// Blocs 
+	
+	$labels = array(
+				'name'               => 'Blocs',
+				'singular_name'      => 'Bloc',
+				'add_new'            => 'Nouveau bloc',
+				'add_new_item'       => 'Ajouter un bloc',
+				'new_item'           => 'Nouveau bloc',
+				'all_items'          => 'Tous les blocs'
+			);
+		
+			$args = array(
+				'labels'             => $labels,
+		    'description'      => __( 'Blocs de contenu', 'edin' ),
+				'public'             => false,
+				'publicly_queryable' => false,
+				'show_ui'            => true,
+				'show_in_menu'       => true,
+				'menu_icon'          => 'dashicons-screenoptions',
+				'query_var'          => true,
+				'rewrite'            => array( 'slug' => 'bloc' ),
+				'capability_type'    => 'page',
+				'has_archive'        => false,
+				'hierarchical'       => false,
+				'menu_position'      => 20,
+				'supports'           => array( 
+					'title', 
+					'editor', 
+					'author', 
+				)
+			);
+	
+		register_post_type( 'cwn_bloc', $args );
+	
+	// Livres
 
 	$labels = array(
 		'name'                => _x( 'Livres', 'Post Type General Name', 'edin' ),
@@ -47,7 +83,7 @@ function custom_post_type() {
 		'public'              => true,
 		'show_ui'             => true,
 		'show_in_menu'        => true,
-		'menu_icon' => 'dashicons-book', // src: http://melchoyce.github.io/dashicons/
+		'menu_icon' => 'dashicons-book',
 		'menu_position'       => 20,
 		'show_in_admin_bar'   => true,
 		'show_in_nav_menus'   => false,
@@ -60,80 +96,55 @@ function custom_post_type() {
 		'capability_type'     => 'post',
 	);
 	register_post_type( 'cwn_book', $args );
-
-}
-
-// Hook into the 'init' action
-add_action( 'init', 'custom_post_type', 0 );
-
-function cwn_testimonials() {
+	
+	// Témoignages
+	
 	$labels = array(
-		'name'               => 'Témoignages',
-		'singular_name'      => 'Témoignage',
-		'add_new'            => 'Nouveau témoignage',
-		'add_new_item'       => 'Ajouter un témoignage',
-		'new_item'           => 'Nouveau témoignage',
-		'all_items'          => 'Tous les témoignages'
-	);
+			'name'               => 'Témoignages',
+			'singular_name'      => 'Témoignage',
+			'add_new'            => 'Nouveau témoignage',
+			'add_new_item'       => 'Ajouter un témoignage',
+			'new_item'           => 'Nouveau témoignage',
+			'all_items'          => 'Tous les témoignages'
+		);
+	
+		$args = array(
+			'labels'             => $labels,
+	    'description'      => __( 'Témoignages de coworkers', 'edin' ),
+			'public'             => true,
+			'publicly_queryable' => true,
+			'show_ui'            => true,
+			'show_in_menu'       => true,
+			'menu_icon'          => 'dashicons-testimonial',
+			'query_var'          => true,
+			'rewrite'            => array( 'slug' => 'testimonial' ),
+			'capability_type'    => 'post',
+			'has_archive'        => true,
+			'hierarchical'       => false,
+			'menu_position'      => 20,
+			'supports'           => array( 
+				'title', 
+				'editor', 
+				'author', 
+				'thumbnail', 
+				'excerpt', 
+				'custom-fields' 
+			)
+		);
+		
+		register_post_type( 'testimonials', $args );
+		
+		
+	
 
-	$args = array(
-		'labels'             => $labels,
-                'description'        => __( 'Description.', 'your-plugin-textdomain' ),
-		'public'             => true,
-		'publicly_queryable' => true,
-		'show_ui'            => true,
-		'show_in_menu'       => true,
-		'menu_icon'          => 'dashicons-testimonial',
-		'query_var'          => true,
-		'rewrite'            => array( 'slug' => 'testimonial' ),
-		'capability_type'    => 'post',
-		'has_archive'        => true,
-		'hierarchical'       => false,
-		'menu_position'      => 20,
-		'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'custom-fields' )
-	);
+} // end function cwn_custom_post_type()
 
-	register_post_type( 'testimonials', $args );
-}
+add_action( 'init', 'cwn_custom_post_type', 0 );
 
-add_action( 'init', 'cwn_testimonials' );
+
 
 function custom_taxonomies() 
 {  	 
-
-//		register_post_type(
-//			'rendez-vous', array(	
-//				'label' => 'Rendez-vous',
-//				'description' => '',
-//				'public' => true,
-//				'show_ui' => true,
-//				'show_in_menu' => true,
-//				'menu_icon' => 'dashicons-megaphone', // src: http://melchoyce.github.io/dashicons/
-//				'capability_type' => 'post',
-//				'hierarchical' => false,
-//				'rewrite' => array('slug' => ''),
-//				'query_var' => true,
-//				'exclude_from_search' => false,
-//				'menu_position' => 8,
-//				'supports' => array('title','editor','custom-fields','comments','author'),
-//				'taxonomies' => array(),
-//				'labels' => array (
-//			  	  'name' => 'Rendez-vous',
-//			  	  'singular_name' => 'Rendez-vous',
-//			  	  'menu_name' => 'Rendez-vous',
-//			  	  'add_new' => 'Ajouter',
-//			  	  'add_new_item' => 'Ajouter un rendez-vous',
-//			  	  'edit' => 'Modifier',
-//			  	  'edit_item' => 'Modifier le rendez-vous',
-//			  	  'new_item' => 'Nouveau rendez-vous',
-//			  	  'view' => 'Afficher',
-//			  	  'view_item' => 'Afficher le rendez-vous',
-//			  	  'search_items' => 'Rechercher',
-//			  	  'not_found' => 'Aucun résultat',
-//			  	  'not_found_in_trash' => 'Aucun résultat',
-//			  	  'parent' => 'Élément Parent',
-//			),) );
-//			
 
 				register_taxonomy( 'cwn_thematique',
 						array( 'cwn_book' ),
