@@ -1,4 +1,13 @@
 <?php
+/*
+Plugin Name: Coworking Neuchatel Traductions
+Plugin URI: https://coworking-neuchatel.ch
+Description: Personalise des traductions.
+Version: 0.0.1
+Author: Manuel Schmalstieg
+Author URI: http://ms-studio.net
+*/
+
 
 /* Custom translation strings
  */

@@ -1,4 +1,14 @@
 <?php
+/*
+Plugin Name: Coworking Neuchatel Analytics
+Plugin URI: https://coworking-neuchatel.ch
+Description: This plugin adds functionality to the Coworking Neuchatel website.
+Version: 0.0.1
+Author: Manuel Schmalstieg
+Author URI: http://ms-studio.net
+*/
+
+
 
 // Je teste de la publicité sur linkedin et google adwords.
 // Pour optimiser le processus d'acquisition de potentiels coworkeurs, 
