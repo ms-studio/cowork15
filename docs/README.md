@@ -8,5 +8,5 @@ Ce dossier contient la documentation technique du site [Coworking-Neuchatel](htt
 
 ## Sections
 
-* [Réservation des salles](reservation-salles)
-* [Le modèle Front-Page](template-front-page)
+* [Réservation des salles](reservation-salles.md)
+* [Le modèle Front-Page](template-front-page.md)

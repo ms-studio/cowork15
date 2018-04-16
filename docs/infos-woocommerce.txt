@@ -1,9 +1,0 @@
-TEST
-
-cowork_mail_commande_terminee
-
-https://www.skyverge.com/blog/how-to-add-a-custom-woocommerce-email/
-
-https://www.sellwithwp.com/customizing-woocommerce-order-emails/
-
-***
