@@ -126,7 +126,7 @@ and (min-width : 1000px) {
 @media only screen 
 and (min-width: 1020px) {
 		.footer-navigation {
-			width: 402px;
+			width: 100%;
 		}
 		.site-info {
 		width: 402px;

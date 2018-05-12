@@ -9,10 +9,13 @@
  Media Queries Breakpoints:
  
  From 1020px: Desktop Menu
-  From 1230px: Wide Desktop
+ From 1230px: Wide Desktop
  
 */
 
+/*
+ * Base font:
+*/
 
 body,
 button,
@@ -26,19 +29,6 @@ textarea
 	-ms-word-wrap: break-word;
 	word-wrap: break-word;
 	font-weight: 300;
-}
-
-.hidden {
-	display: none;
-}
-
-.admin-bar .admin-visible {
-	display: block;
-}
-
-blockquote {
-	font-size: 120%;
-	line-height: 1.2;
 }
 
 /*
@@ -68,6 +58,24 @@ body div.jp-carousel-titleanddesc-title
 {
 	font-family: 'hk-super', Helvetica, Arial, sans-serif !important;
 }
+
+.hidden {
+	display: none;
+}
+
+.admin-bar .admin-visible {
+	display: block;
+}
+
+
+
+blockquote {
+	font-size: 120%;
+	line-height: 1.2;
+}
+
+
+
 
 .small {
 	font-size: 86%;
@@ -270,6 +278,8 @@ h1.site-title a {
 
 /* @end */
 
+/* @group Prestations */
+
 .ul-presta li {
 	border: 0px solid #333;
 	margin-bottom: 1em;
@@ -324,6 +334,8 @@ h1.site-title a {
 .ul-presta li#acces:before { 
 	content: "\e606";
 }
+
+/* @end */
 
 /* @end */
 
@@ -612,6 +624,13 @@ body.logged-in #menu-item-931 {
 	display: none;
 }
 
+.sd-sharing-enabled:not(#jp-post-flair), 
+.jetpack-likes-widget-wrapper, 
+.sharedaddy.sd-block.sd-gplus, 
+.sd-rating, div#jp-relatedposts {
+	border-color: #e74f4e;
+}
+
 /* @end */
 
 /* @group Testimonials */
@@ -713,6 +732,18 @@ body.logged-in #menu-item-931 {
     margin-right: 0;
   }
   
+}
+
+/* @end */
+
+/* @group Page Contact */
+
+.page-id-23 .tiled-gallery {
+	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5);;
+}
+
+.page-id-23 .tiled-gallery .tiled-gallery-item img {
+/*	border: 1px solid #ddd;*/
 }
 
 /* @end */

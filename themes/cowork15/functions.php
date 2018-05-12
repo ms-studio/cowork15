@@ -6,7 +6,7 @@
  *
  */
 
-// Change-Detector-XXXXXXXXXX - for Espresso.app
+// Change-Detector-XXXXXXXXXXXX - for Espresso.app
 
 /**
  * Set the content width based on the theme's design and stylesheet.
@@ -195,12 +195,6 @@ function cowork_scripts() {
 	wp_dequeue_script( 'edin-navigation' );
 
 // add custom fonts
-
-//	wp_enqueue_style( 'cowork-noto-sans', cowork_noto_sans_font_url(), array(), null );
-//
-//	wp_enqueue_style( 'cowork-noto-serif', cowork_noto_serif_font_url(), array(), null );
-//
-//	wp_enqueue_style( 'cowork-droid-sans-mono', cowork_droid_sans_mono_font_url(), array(), null );
 	
 
 	wp_enqueue_script( 'cowork-navigation', get_stylesheet_directory_uri() . '/js/navigation.js', array( 'jquery' ), '20140807', true );
@@ -247,7 +241,7 @@ if ( $host != 'coworking-neuchatel.ch' ) {
  		// PROD: the MAIN stylesheet - combined and minified
  		wp_enqueue_style( 
  				'cowork-style', 
- 				get_stylesheet_directory_uri() . '/css/build/styles.20180126225144.css', // main.css
+ 				get_stylesheet_directory_uri() . '/css/build/styles.20180512153428.css', // main.css
  				false, // dependencies
  				null // version
  		); 
@@ -266,12 +260,6 @@ function cowork_admin_fonts() {
 
 	wp_dequeue_style( 'edin-pt-mono' );
 	
-
-//	wp_enqueue_style( 'cowork-noto-sans', cowork_noto_sans_font_url(), array(), null );
-//
-//	wp_enqueue_style( 'cowork-noto-serif', cowork_noto_serif_font_url(), array(), null );
-//
-//	wp_enqueue_style( 'cowork-droid-sans-mono', cowork_droid_sans_mono_font_url(), array(), null );
 }
 
 add_action( 'admin_print_scripts-appearance_page_custom-header', 'cowork_admin_fonts', 11 );
