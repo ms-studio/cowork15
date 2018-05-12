@@ -14,8 +14,6 @@
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <?php wp_head(); ?>
-<script src="//use.typekit.net/gha6bfi.js"></script>
-<script>try{Typekit.load();}catch(e){}</script>
 </head>
 
 <body <?php body_class(); ?>>

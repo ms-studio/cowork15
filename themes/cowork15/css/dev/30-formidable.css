@@ -27,7 +27,7 @@ a.frm_save_draft,
 .with_frm_style .frm_radio label, .with_frm_style .frm_checkbox label,
 .frm_style_formidable-style.with_frm_style .frm_error_style
 {
- font-family: "camingodos-web", "Arial Bold", Helvetica, sans-serif !important;
+ font-family: 'hk-super', "camingodos-web", "Arial Bold", Helvetica, sans-serif !important;
 	font-size: 100%;
  }
  
@@ -164,7 +164,7 @@ table.frmcal-calendar .frmcal-today .frmcal_date {
 	margin: 0 0 1em 0;
 	padding: 1em;
 	background: #fff;
-	font-family: "camingodos-web", "Arial Bold", Helvetica, sans-serif;
+	font-family: 'hk-super', "camingodos-web", "Arial Bold", Helvetica, sans-serif;
 }
 
 .form_modif_donnees > div > div > p {

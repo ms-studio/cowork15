@@ -22,7 +22,7 @@ blockquote,
 textarea 
 {
 	color: #242424;
-	font-family: 'chaparral-pro', Georgia, 'Times New Roman', 'TimesNewRoman', serif;
+	font-family: 'hk-super', Helvetica, Arial, sans-serif;
 	-ms-word-wrap: break-word;
 	word-wrap: break-word;
 	font-weight: 300;
@@ -36,18 +36,13 @@ textarea
 	display: block;
 }
 
-body div.jp-carousel-titleanddesc-title 
-{
-	font-family: 'chaparral-pro', Georgia, 'Times New Roman', 'TimesNewRoman', serif !important;
-}
-
 blockquote {
 	font-size: 120%;
 	line-height: 1.2;
 }
 
 /*
- * The Sans-Serif:
+ * Titles and menus:
 */
 
 h1, h2, h3, h4, h5, h6,
@@ -63,9 +58,16 @@ input[type="submit"],
 #events_wrap,
 .frmcal
 {
-	font-family: "camingodos-web", "Arial Bold", Helvetica, sans-serif;
+	font-family: 'hk-super', Helvetica, Arial, sans-serif;
 }
 
+/*
+ * Jetpack Carousel font override:
+*/
+body div.jp-carousel-titleanddesc-title 
+{
+	font-family: 'hk-super', Helvetica, Arial, sans-serif !important;
+}
 
 .small {
 	font-size: 86%;
@@ -531,7 +533,7 @@ table.ical td.day7 {
 }
     
 .member-navigation a {
-	font-family: "camingodos-web", "Arial Bold", Helvetica, sans-serif;
+	font-family: 'hk-super', Helvetica, Arial, sans-serif;
 }
 
 body.logged-in #menu-item-931 {
@@ -678,7 +680,7 @@ body.logged-in #menu-item-931 {
   font-weight: 400;
 }
 .list-testimonials .entry-meta .name {
-  font-family: "camingodos-web","Arial Bold",Helvetica,sans-serif;
+  font-family: 'hk-super', Helvetica, Arial, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
 }
