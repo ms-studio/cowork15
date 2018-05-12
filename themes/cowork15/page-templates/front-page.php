@@ -52,7 +52,7 @@ get_header(); ?>
 		
 		
 		// Bloc 2: TARIFS
-			
+		
 			$custom_query = new WP_Query( array(
 						'post_type' => 'cwn_bloc',
 						'page_id' => 2046,
@@ -89,49 +89,50 @@ get_header(); ?>
 				
 				endif;
 				wp_reset_postdata();
+		
 	
-	
-			// Bloc 3: EXTENSIONS
+	// Bloc 3: EXTENSIONS
+				
+	$custom_query = new WP_Query( array(
+				'post_type' => 'cwn_bloc',
+				'page_id' => 2047,
+				'post_status' => array( 'publish' )
+		) ); 
+		
+		if ($custom_query->have_posts()) : 
+		
+			?><div class="front-item"><?php
+		
+		while( $custom_query->have_posts() ) : $custom_query->the_post();
+		
+				// title
+				
+				?>
+				<h2 id="tarifs" class="h2 title-style"><?php the_title(); ?></a></h2>
+				
+				<section class="layer plans tarifs"><section>
+				<?php
+				
+				// content
+				
+				the_content('Read the rest of this entry &raquo;');
+				
+				?>
+				<div style="clear: both;"></div>
+				</section></section>
+				<?php
+				
+				edit_post_link( __( 'Edit', 'edin' ), '<footer class="entry-footer modify-link"><span class="edit-link">', '</span></footer>' );
+		
+		endwhile; 
 			
-				$custom_query = new WP_Query( array(
-							'post_type' => 'cwn_bloc',
-							'page_id' => 2047,
-							'post_status' => array( 'publish' )
-					) ); 
+			?></div><?php
+		
+		endif;
+		wp_reset_postdata();
+		
 					
-					if ($custom_query->have_posts()) : 
-					
-						?><div class="front-item"><?php
-					
-					while( $custom_query->have_posts() ) : $custom_query->the_post();
-					
-							// title
-							
-							?>
-							<h2 id="tarifs" class="h2 title-style"><?php the_title(); ?></a></h2>
-							
-							<section class="layer plans tarifs"><section>
-							<?php
-							
-							// content
-							
-							the_content('Read the rest of this entry &raquo;');
-							
-							?>
-							<div style="clear: both;"></div>
-							</section></section>
-							<?php
-							
-							edit_post_link( __( 'Edit', 'edin' ), '<footer class="entry-footer modify-link"><span class="edit-link">', '</span></footer>' );
-					
-					endwhile; 
-						
-						?></div><?php
-					
-					endif;
-					wp_reset_postdata();
-					
-					// TEMOIGNAGES
+	// TEMOIGNAGES
 	
     $custom_query = new WP_Query( array(
 			'post_type' => 'testimonials',
